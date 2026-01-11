@@ -1,6 +1,7 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
+import { LOCATION_INFO } from '../constants/weddingInfo';
 
 const LocationSection = () => {
   const { ref, style } = useScrollReveal({ 
@@ -34,27 +35,37 @@ const LocationSection = () => {
           </div>
           <div className="com-text-block p-absolute animation location-header-text">
             <div className="text-block">
-              <p className="text-block-css full-width">BUỔI TIỆC ĐƯỢC TỔ CHỨC TẠI<br /></p>
+              <p className="text-block-css full-width">{LOCATION_INFO.HEADER}<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation location-address">
             <div className="text-block">
-              <p className="text-block-css full-width">431 Hoàng Văn Thụ, Phường 4,<br />Tân Bình, Hồ Chí Minh<br /></p>
+              <p className="text-block-css full-width">
+                {LOCATION_INFO.ADDRESS_LINES.map((line) => (
+                  <React.Fragment key={line}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation location-venue-name">
             <div className="text-block">
-              <p className="text-block-css full-width"><span style={{fontWeight: 700}}>The ADORA Center</span><br /></p>
+              <p className="text-block-css full-width">
+                <span style={{fontWeight: 700}}>{LOCATION_INFO.VENUE_NAME}</span>
+                <br />
+              </p>
             </div>
           </div>
           <a
-            href="https://maps.app.goo.gl/PP57rDnyXbgNEVbM8"
-            title="Open link https://maps.app.goo.gl/PP57rDnyXbgNEVbM8"
+            href={LOCATION_INFO.MAP_URL}
+            title={`Open link ${LOCATION_INFO.MAP_URL}`}
             className="com-button p-absolute cursor-pointer animation location-map-button"
           >
             <div className="button-css full-height full-width">
               <span className="button-loader"></span>
-              <div className="button-text full-width u-select-none">Xem Chỉ Đường</div>
+              <div className="button-text full-width u-select-none">{LOCATION_INFO.MAP_CTA}</div>
             </div>
           </a>
         </div>

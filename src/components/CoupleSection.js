@@ -1,6 +1,7 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
+import { COUPLE_INFO } from '../constants/weddingInfo';
 
 const CoupleSection = () => {
   const { ref, style } = useScrollReveal({ 
@@ -17,20 +18,20 @@ const CoupleSection = () => {
         <div className="section-container full-height p-relative">
           <div className="com-text-block p-absolute animation couple-header-text">
             <div className="text-block">
-              <h2 className="text-block-css full-width">Trân Trọng Báo Tin Lễ Thành Hôn Của<br /></h2>
+              <h2 className="text-block-css full-width">{COUPLE_INFO.HEADER}<br /></h2>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-name">
             <div className="full-width full-height">
               <div className="text-block">
-                <h1 className="text-block-css full-width">Nguyễn Anh Tú</h1>
+                <h1 className="text-block-css full-width">{COUPLE_INFO.GROOM_NAME}</h1>
               </div>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-name">
             <div className="full-width full-height">
               <div className="text-block">
-                <h1 className="text-block-css full-width">Trần Thị Diệu Nhi</h1>
+                <h1 className="text-block-css full-width">{COUPLE_INFO.BRIDE_NAME}</h1>
               </div>
             </div>
           </div>
@@ -61,32 +62,46 @@ const CoupleSection = () => {
           </div>
           <div className="com-text-block p-absolute animation couple-groom-side-label">
             <div className="text-block">
-              <p className="text-block-css full-width">&nbsp;NHÀ TRAI<br /><br /></p>
+              <p className="text-block-css full-width">&nbsp;{COUPLE_INFO.HOUSE_GROOM_LABEL}<br /><br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-side-label">
             <div className="text-block">
-              <p className="text-block-css full-width">&nbsp;NHÀ GÁI<br /><br /></p>
+              <p className="text-block-css full-width">&nbsp;{COUPLE_INFO.HOUSE_BRIDE_LABEL}<br /><br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-location">
             <div className="text-block">
-              <p className="text-block-css full-width">Quận 8, Hồ Chí Minh</p>
+              <p className="text-block-css full-width">{COUPLE_INFO.GROOM_LOCATION}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-location">
             <div className="text-block">
-              <p className="text-block-css full-width">Quận 8, Hồ Chí Minh</p>
+              <p className="text-block-css full-width">{COUPLE_INFO.BRIDE_LOCATION}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-parents">
             <div className="text-block">
-              <p className="text-block-css full-width">ÔNG CẤN VĂN AN<br />BÀ NGUYỄN THỊ HẢI<br /></p>
+              <p className="text-block-css full-width">
+                {COUPLE_INFO.GROOM_PARENTS.map((line) => (
+                  <React.Fragment key={line}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-parents">
             <div className="text-block">
-              <p className="text-block-css full-width">ÔNG CẤN VĂN AN<br />BÀ NGUYỄN THỊ HẢI<br /></p>
+              <p className="text-block-css full-width">
+                {COUPLE_INFO.BRIDE_PARENTS.map((line) => (
+                  <React.Fragment key={line}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
+              </p>
             </div>
           </div>
         </div>

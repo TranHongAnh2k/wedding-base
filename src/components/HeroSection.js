@@ -1,4 +1,5 @@
 import React from 'react';
+import { COUPLE_INFO, EVENT_INFO } from '../constants/weddingInfo';
 
 const HeroSection = ({ guestName = 'Anh Long123' }) => {
   return (
@@ -16,13 +17,13 @@ const HeroSection = ({ guestName = 'Anh Long123' }) => {
             <div className="com-text-block p-absolute animation hero-title-name">
               <div className="full-width full-height">
                 <div className="text-block">
-                  <h1 className="text-block-css full-width">Anh Tú - Diệu Nhi</h1>
+                  <h1 className="text-block-css full-width">{COUPLE_INFO.DISPLAY_NAME}</h1>
                 </div>
               </div>
             </div>
             <div className="com-text-block p-absolute animation hero-date">
               <div className="text-block">
-                <h2 className="text-block-css full-width">15.02.2025</h2>
+                  <h2 className="text-block-css full-width">{EVENT_INFO.HERO_DATE_DISPLAY}</h2>
               </div>
             </div>
             <div className="com-text-block p-absolute animation hero-subtitle">
@@ -38,7 +39,7 @@ const HeroSection = ({ guestName = 'Anh Long123' }) => {
             </div>
             <div className="com-text-block p-absolute animation hero-time">
               <div className="text-block">
-                <h2 className="text-block-css full-width">THỨ 5 - 10H00<br /></h2>
+                <h2 className="text-block-css full-width">{EVENT_INFO.HERO_TIME_DISPLAY}<br /></h2>
               </div>
             </div>
             <div className="com-image-block p-absolute animation hero-decorative-image-2">

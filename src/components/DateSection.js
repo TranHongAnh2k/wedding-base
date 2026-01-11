@@ -1,6 +1,7 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
+import { EVENT_INFO } from '../constants/weddingInfo';
 
 const DateSection = () => {
   const { ref, style } = useScrollReveal({ 
@@ -17,7 +18,7 @@ const DateSection = () => {
         <div className="section-container full-height p-relative">
           <div className="com-text-block p-absolute animation date-day-number">
             <div className="text-block">
-              <p className="text-block-css full-width">15<br /></p>
+              <p className="text-block-css full-width">{EVENT_INFO.DAY}<br /></p>
             </div>
           </div>
           <div className="com-image-block p-absolute animation date-image-1">
@@ -40,7 +41,7 @@ const DateSection = () => {
           </div>
           <div className="com-text-block p-absolute animation date-header-text">
             <div className="text-block">
-              <h2 className="text-block-css full-width">Trân Trọng Kính Mời<br /></h2>
+              <h2 className="text-block-css full-width">{EVENT_INFO.INVITE_HEADER}<br /></h2>
             </div>
           </div>
           <div className="com-image-block p-absolute animation date-decoration-image">
@@ -51,32 +52,40 @@ const DateSection = () => {
           </div>
           <div className="com-text-block p-absolute animation date-event-description">
             <div className="text-block">
-              <p className="text-block-css full-width">THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN<br />Vào Lúc<br /></p>
+              <p className="text-block-css full-width">
+                {EVENT_INFO.EVENT_DESCRIPTION}
+                <br />
+                {EVENT_INFO.EVENT_AT_LABEL}
+                <br />
+              </p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-time">
             <div className="text-block">
-              <p className="text-block-css full-width">10 giờ 00<br /></p>
+              <p className="text-block-css full-width">{EVENT_INFO.TIME}<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-year">
             <div className="text-block">
-              <p className="text-block-css full-width"><span style={{fontWeight: 'normal'}}>Năm 2025</span><br /></p>
+              <p className="text-block-css full-width">
+                <span style={{fontWeight: 'normal'}}>{EVENT_INFO.YEAR}</span>
+                <br />
+              </p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-lunar-date">
             <div className="text-block">
-              <p className="text-block-css full-width">(Tức Ngày 18 Tháng 01 Năm Ất Tỵ)<br /></p>
+              <p className="text-block-css full-width">({EVENT_INFO.LUNAR_DATE})<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-weekday">
             <div className="text-block">
-              <p className="text-block-css full-width">Thứ 5<br /></p>
+              <p className="text-block-css full-width">{EVENT_INFO.WEEKDAY}<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-month">
             <div className="text-block">
-              <p className="text-block-css full-width">Tháng 2<br /></p>
+              <p className="text-block-css full-width">{EVENT_INFO.MONTH}<br /></p>
             </div>
           </div>
           <div className="p-absolute animation date-decorative-line-1">
