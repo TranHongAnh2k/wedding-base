@@ -1,0 +1,59 @@
+/**
+ * Main SCSS File
+ * Import tất cả các partials theo thứ tự
+ * 
+ * Thứ tự import:
+ * 1. Variables và Mixins (phải import đầu tiên)
+ * 2. CSS Variables (giữ nguyên để dùng trong JS)
+ * 3. Reset và Base styles
+ * 4. Utilities
+ * 5. Components
+ * 6. Animations
+ * 7. Element styles (giữ nguyên file CSS hiện tại)
+ * 8. Fonts và Icons
+ * 9. Third-party styles
+ * 10. Dynamic styles (minified - giữ nguyên)
+ */
+
+// 1. Variables và Mixins (phải import đầu tiên)
+@import 'variables';
+@import 'mixins';
+
+// Note: CSS Variables (variables.css) được import trực tiếp trong index.js
+// để tránh lỗi parse SCSS
+
+// 3. Reset và Base
+@import 'reset';
+@import 'base';
+
+// 4. Utilities
+@import 'utilities';
+
+// 5. Components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/images';
+@import 'components/text';
+@import 'components/gallery';
+@import 'components/popups';
+@import 'components/loaders';
+@import 'components/music-toggle';
+@import 'components/scroll-reveal';
+
+// 6. Animations
+@import 'animations/keyframes';
+@import 'animations/transitions';
+
+// 7. Fonts và Icons
+@import '../css/fonts.css';
+@import '../css/iconfont.css';
+@import '../css/custom-fonts.css';
+
+// 8. Third-party styles
+@import '../css/animatev4.css';
+@import '../css/spin-keyframes.css';
+@import '../css/ejoy-styles.css';
+
+// Note: element-styles.css và dynamic-styles.css (minified) 
+// được import trực tiếp trong index.js để tránh lỗi parse SCSS
+

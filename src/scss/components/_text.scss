@@ -1,0 +1,100 @@
+/**
+ * Text Components
+ */
+
+.text-block-css {
+  display: inline-block;
+  word-break: break-word;
+  -webkit-background-clip: text !important;
+}
+
+// Animation Text
+.animationText {
+  span {
+    display: inline-block;
+  }
+
+  .bar {
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    background: currentColor;
+    top: 0;
+    right: 0;
+  }
+
+  .hidden {
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .visible {
+    opacity: 1;
+    position: relative;
+  }
+}
+
+// Animate Word Wrapper
+.animate-word-wrapper {
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+  transition: width $transition-slow;
+  text-align: start;
+
+  > span {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: inherit;
+
+    i {
+      font: inherit;
+      font-style: initial;
+      display: inline-block;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+
+      &.in {
+        animation-name: rotate-3-in;
+        animation-fill-mode: forwards;
+        animation-duration: $transition-slow;
+      }
+
+      &.out {
+        animation-name: rotate-3-out;
+        animation-fill-mode: forwards;
+        animation-duration: $transition-slow;
+      }
+    }
+  }
+}
+
+// Caret
+.caret-dummy {
+  animation: caret-popping 1s infinite;
+}
+
+.caret {
+  @include transform(scaleY(1.3) translateY(-3%));
+}
+
+// Line
+.line-css {
+  padding: $spacing-xs 0;
+}
+
+.line-container {
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+  border-bottom-width: 0 !important;
+}
+
+// Frame HTML Box
+.frame-html-box {
+  iframe {
+    @include full-size;
+  }
+}
+

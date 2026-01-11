@@ -1,0 +1,68 @@
+/**
+ * SCSS Variables
+ * Tất cả các biến được định nghĩa ở đây để dễ quản lý
+ */
+
+// Colors
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #979797;
+$color-grey-light: #d4d4d4;
+$color-grey-dark: #808080;
+$color-grey-bg: #e6e6e6;
+$color-alert: #15942A;
+$color-close: #80808085;
+
+// Spacing
+$spacing-xs: 8px;
+$spacing-sm: 10px;
+$spacing-md: 15px;
+$spacing-lg: 20px;
+$spacing-xl: 30px;
+
+// Sizes
+$size-icon-small: 14px;
+$size-icon-medium: 25px;
+$size-icon-large: 60px;
+$size-btn-width: 80px;
+$size-btn-height: 40px;
+
+// Border radius
+$radius-sm: 4px;
+$radius-md: 5px;
+$radius-lg: 8px;
+$radius-xl: 10px;
+$radius-full: 100%;
+
+// Z-index layers
+$z-index-base: 1;
+$z-index-dropdown: 100;
+$z-index-overlay: 999;
+$z-index-modal: 1000;
+$z-index-alert: 999999;
+$z-index-lightbox: 1000000;
+$z-index-lightbox-backdrop: 1000000000;
+
+// Transitions
+$transition-fast: 0.2s ease-out;
+$transition-normal: 0.3s ease-in-out;
+$transition-slow: 0.6s ease;
+
+// Font
+$font-family-base: 'Roboto', sans-serif;
+$font-size-base: 12px;
+$line-height-base: 1.5;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+// Shadows
+$shadow-sm: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+$shadow-md: 0px 0px 12px rgba(51, 51, 51, 0.5);
+
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+

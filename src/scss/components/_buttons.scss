@@ -1,0 +1,62 @@
+/**
+ * Button Components
+ */
+
+.com-button {
+  cursor: pointer;
+  @include user-select-none;
+  @include transition(transform, $transition-fast);
+
+  &:active {
+    @include transform(translateY(5px));
+  }
+}
+
+.button-css {
+  @include flex-center;
+  text-align: center;
+}
+
+.button-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: unset;
+}
+
+.button-loader {
+  color: $color-white;
+  font-size: 7px;
+  position: relative;
+  text-indent: -9999em;
+  @include transform(translateZ(0));
+  animation-delay: -0.16s;
+  display: none;
+  top: -17px;
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  animation-fill-mode: both;
+  animation: bblFadInOut 1.8s infinite ease-in-out;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    width: 1.3em;
+    height: 1.3em;
+    animation-fill-mode: both;
+    animation: bblFadInOut 1.8s infinite ease-in-out;
+  }
+
+  &:before {
+    left: -3.5em;
+    animation-delay: -0.32s;
+  }
+
+  &:after {
+    left: 3.5em;
+  }
+}
+

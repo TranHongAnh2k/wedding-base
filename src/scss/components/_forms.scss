@@ -1,0 +1,288 @@
+/**
+ * Form Components
+ */
+
+// Input CSS
+.input-css {
+  overflow: hidden;
+
+  input {
+    background: transparent;
+    color: inherit;
+    padding-left: $spacing-sm;
+    border-radius: 0;
+    text-align: inherit;
+    letter-spacing: inherit;
+
+    @include placeholder {
+      text-transform: var(--placeholder-transform);
+      text-decoration: var(--placeholder-decoration);
+    }
+  }
+}
+
+// Input Number Quantity
+.input-number-quantity-css {
+  @include full-size;
+  overflow: hidden;
+  display: flex;
+  @include user-select-none;
+
+  .minus,
+  .plus {
+    @include flex-center;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+
+  .minus {
+    border-right: inherit;
+  }
+
+  .plus {
+    border-left: inherit;
+  }
+
+  input {
+    text-align: center;
+    background: transparent;
+    color: inherit;
+    @include full-size;
+    border: 0;
+    outline: none;
+    padding-left: $spacing-sm;
+    padding-right: $spacing-sm;
+    box-sizing: border-box;
+    border-radius: 0;
+
+    @include placeholder {
+      color: $color-grey;
+      -webkit-text-fill-color: $color-grey;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type=number] {
+      -moz-appearance: textfield;
+    }
+  }
+}
+
+// Input DateTime
+.input-datetime {
+  overflow: hidden;
+
+  input {
+    background: transparent;
+    @include full-size;
+    padding-left: $spacing-sm;
+    padding-right: $spacing-sm;
+    border-radius: 0;
+    box-sizing: border-box;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    text-align: inherit;
+    letter-spacing: inherit;
+
+    @include placeholder {
+      text-transform: var(--placeholder-transform);
+      text-decoration: var(--placeholder-decoration);
+    }
+  }
+
+  .input-datetime-placeholder {
+    position: absolute;
+    top: 0;
+    padding-left: 12px;
+    @include full-size;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+  }
+}
+
+// Input File
+.input-file {
+  overflow: hidden;
+  @include flex-between;
+  padding: 0 $spacing-sm;
+  cursor: pointer;
+
+  .title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+  }
+}
+
+// Textarea
+.textarea-css {
+  @include full-size;
+  overflow: hidden;
+
+  textarea {
+    background: transparent;
+    padding-top: 6px;
+    padding-bottom: 0;
+    color: inherit;
+    padding-left: $spacing-sm;
+    border-radius: 0;
+    text-align: inherit;
+    letter-spacing: inherit;
+
+    @include placeholder {
+      text-transform: var(--placeholder-transform);
+      text-decoration: var(--placeholder-decoration);
+    }
+  }
+}
+
+// Select
+.select-css {
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+
+  select {
+    text-align: inherit;
+    letter-spacing: inherit;
+    background: transparent;
+    padding-right: 26px;
+    padding-left: $spacing-sm;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    color: $color-grey;
+
+    &.select {
+      color: inherit;
+    }
+
+    option:first-child {
+      color: $color-grey;
+    }
+  }
+
+  .chevron {
+    pointer-events: none;
+    color: $color-grey;
+    position: absolute;
+    right: 0;
+    width: 26px;
+    height: 100%;
+    top: 0;
+
+    .icon {
+      position: absolute;
+      display: block;
+      width: $size-icon-small;
+      height: $size-icon-small;
+      border: 2px solid transparent;
+      border-radius: 100px;
+      top: calc(50% - 7px);
+      left: calc(50% - 7px);
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        border-bottom: 2px solid;
+        border-right: 2px solid;
+        @include transform(rotate(45deg));
+      }
+    }
+  }
+}
+
+// Checkbox Group
+.com-checkbox-group {
+  min-height: $size-btn-height;
+}
+
+.checkbox-group-css {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  padding-left: $spacing-sm;
+  min-height: $size-btn-height;
+}
+
+.checkbox-group-item {
+  @include flex-center;
+}
+
+.checkbox-group-input {
+  margin-right: $spacing-sm;
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  min-height: 13px;
+  flex-shrink: 0;
+}
+
+// Radio
+.com-radio {
+  min-height: $size-btn-height;
+  height: auto !important;
+}
+
+.radio-css {
+  min-height: $size-btn-height;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.radio-item {
+  @include flex-center;
+  border-radius: $radius-md;
+  padding-left: $spacing-sm;
+}
+
+.radio-input {
+  margin-right: $spacing-sm;
+  width: 13px;
+  height: 13px;
+  min-width: 13px;
+  min-height: 13px;
+  flex-shrink: 0;
+}
+
+// Field Error
+.field-error {
+  top: 0;
+  right: 0;
+  position: absolute;
+  height: 100%;
+  width: $spacing-xl;
+
+  img {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: calc(50% - 8px);
+  }
+}
+

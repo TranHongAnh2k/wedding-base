@@ -1,0 +1,40 @@
+/**
+ * Loader Components
+ */
+
+.loader {
+  position: relative;
+  height: $spacing-lg;
+  width: $spacing-lg;
+  display: inline-block;
+  animation: around 5.4s infinite;
+
+  &::after,
+  &::before {
+    content: "";
+    background: white;
+    position: absolute;
+    display: inline-block;
+    @include full-size;
+    border-width: 2px;
+    border-color: #333 #333 transparent transparent;
+    border-style: solid;
+    border-radius: $spacing-lg;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    animation: around 0.7s ease-in-out infinite;
+  }
+
+  &::after {
+    animation: around 0.7s ease-in-out 0.1s infinite;
+    background: transparent;
+  }
+}
+
+.icon-container {
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+}
+

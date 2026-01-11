@@ -1,19 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// Import CSS files directly
+// Import CSS Variables trước (cần cho các file khác)
 import './css/variables.css';
-import './css/main.css';
-import './css/dynamic-styles.css';
+// Import SCSS main file (tự động import tất cả partials)
+import './scss/main.scss';
+// Import CSS files minified (không thể import trong SCSS)
 import './css/element-styles.css';
-import './css/fonts.css';
-import './css/iconfont.css';
-import './css/animatev4.css';
-import './css/scroll-reveal.css';
-import './css/music-toggle.css';
-import './css/spin-keyframes.css';
-import './css/ejoy-styles.css';
-import './css/custom-fonts.css';
+import './css/dynamic-styles.css';
 import './utils/errorHandler';
 import App from './App';
 

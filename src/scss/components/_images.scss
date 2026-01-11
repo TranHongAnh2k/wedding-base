@@ -1,0 +1,181 @@
+/**
+ * Image Components
+ */
+
+.image-block-css {
+  overflow: hidden;
+  will-change: filter;
+}
+
+.image-background,
+.image-background-compare {
+  margin: 0 auto;
+}
+
+.image-background-compare {
+  top: 0;
+  left: 0;
+  @include full-size;
+}
+
+// Image Compare Line
+.image-compare-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 40;
+  width: 38px;
+  height: 38px;
+  margin-top: -22px;
+  margin-left: -22px;
+  cursor: pointer;
+  border: 3px solid $color-white;
+  border-radius: 1000px;
+  @include box-shadow($shadow-md);
+
+  &:before,
+  &:after {
+    position: absolute;
+    z-index: 30;
+    display: block;
+    content: " ";
+    background: $color-white;
+  }
+
+  &:before {
+    left: 50%;
+    width: 3px;
+    height: 9999px;
+    bottom: 50%;
+    margin-bottom: 22px;
+    box-shadow: 0 3px 0 $color-white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 3px 0 $color-white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  }
+
+  &:after {
+    left: 50%;
+    width: 3px;
+    height: 9999px;
+    top: 50%;
+    margin-top: 22px;
+    box-shadow: 0 -3px 0 $color-white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -webkit-box-shadow: 0 -3px 0 $color-white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+  }
+}
+
+.image-compare-left-arrow,
+.image-compare-right-arrow {
+  top: 50%;
+  margin-top: -6px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px inset transparent;
+}
+
+.image-compare-left-arrow {
+  left: 50%;
+  margin-left: -17px;
+  border-right: 6px solid $color-white;
+}
+
+.image-compare-right-arrow {
+  right: 50%;
+  margin-right: -17px;
+  border-left: 6px solid $color-white;
+}
+
+// Gallery View Icons
+.gallery-view-icon-next img,
+.gallery-view-icon-prev img,
+.carousel-icon-next img,
+.carousel-icon-prev img {
+  width: $size-icon-medium;
+  height: $size-icon-medium;
+  filter: drop-shadow(0 0 1px black);
+}
+
+// Icon Play Video
+.icon-play-video {
+  @include absolute-center;
+  width: $size-icon-large;
+  height: $size-icon-large;
+  cursor: pointer;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: var(--bg-play-icon);
+}
+
+// Player Button Unmute
+.player-btn-unmute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+
+  > div {
+    content: "";
+    @include absolute-center;
+    width: $size-icon-large;
+    height: $size-icon-large;
+    background-size: 90%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: $radius-full;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: var(--bg-unmute-icon);
+  }
+}
+
+// Lightbox
+.lightbox-btn-close {
+  background-color: #a8a8a8;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  cursor: pointer;
+
+  > span {
+    position: absolute;
+    z-index: $z-index-overlay;
+    width: $size-icon-small;
+    height: $size-icon-small;
+    top: calc(50% - 7px);
+    left: calc(50% - 7px);
+    @include mask-full;
+    background: $color-white;
+    -webkit-mask-image: var(--mask-close-icon);
+  }
+}
+
+.lightbox-image,
+.lightbox-video,
+.lightbox-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.lightbox-iframe {
+  @include full-size;
+}
+
+.lightbox-backdrop {
+  @include full-size;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-lightbox-backdrop;
+  touch-action: none;
+}
+

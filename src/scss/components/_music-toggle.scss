@@ -1,0 +1,54 @@
+/**
+ * Music Toggle Component
+ */
+
+.music-toggle {
+  position: fixed;
+  left: 14px;
+  bottom: 14px;
+  z-index: 99999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  user-select: none;
+  @include transition(all, 0.2s);
+  @include box-shadow(0 6px 20px rgba(0, 0, 0, 0.15));
+
+  &:hover {
+    @include transform(translateY(-1px) scale(1.03));
+    @include box-shadow(0 10px 24px rgba(0, 0, 0, 0.18));
+  }
+
+  img {
+    display: block;
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    pointer-events: none;
+  }
+
+  &.vibrating {
+    animation: wc-pulse 1.6s ease-out infinite;
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .play-icon,
+  .pause-icon {
+    backface-visibility: visible !important;
+    -webkit-backface-visibility: visible !important;
+  }
+}
+
+// Tối ưu cho mobile
+@media (hover: none) {
+  .music-toggle {
+    bottom: 12px;
+    left: 12px;
+  }
+}
+

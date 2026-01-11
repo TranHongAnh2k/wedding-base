@@ -1,0 +1,80 @@
+/**
+ * Utility Classes
+ * Các utility classes tái sử dụng
+ */
+
+// Visibility
+.visibility-hidden {
+  visibility: hidden !important;
+}
+
+.d-none {
+  display: none;
+}
+
+.inline {
+  display: inline !important;
+}
+
+// Cursor
+.cursor-pointer {
+  cursor: pointer;
+}
+
+// Position
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+// Sizing
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+// Mask
+.full-mask-size {
+  -webkit-mask-size: 100% 100%;
+}
+
+.mask-position {
+  -webkit-mask-position: 0% 0%;
+}
+
+// User select
+.u-select-none {
+  @include user-select-none;
+}
+
+// Group containers
+.group-container {
+  @include full-size;
+}
+
+.popup-wrapper,
+.popup-background {
+  top: 0;
+  left: 0;
+}
+
+.popup-background {
+  overflow: hidden;
+}
+
+// Overlay
+.overlay {
+  pointer-events: none;
+  @include full-size;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+

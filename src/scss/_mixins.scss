@@ -1,0 +1,115 @@
+/**
+ * SCSS Mixins
+ * Các mixins tái sử dụng
+ */
+
+// Flexbox center
+@mixin flex-center {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+// Flexbox space between
+@mixin flex-between {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+// Absolute center
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+// Full size
+@mixin full-size {
+  width: 100%;
+  height: 100%;
+}
+
+// User select none
+@mixin user-select-none {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+// Mask properties
+@mixin mask-full {
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-position: 0% 0%;
+}
+
+// Font smoothing
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Transition
+@mixin transition($property: all, $duration: $transition-normal, $easing: ease) {
+  transition: $property $duration $easing;
+  -webkit-transition: $property $duration $easing;
+}
+
+// Transform
+@mixin transform($transform) {
+  transform: $transform;
+  -webkit-transform: $transform;
+}
+
+// Box shadow (có thể nhận nhiều giá trị)
+@mixin box-shadow($shadows...) {
+  box-shadow: $shadows;
+  -webkit-box-shadow: $shadows;
+}
+
+// Placeholder styling
+@mixin placeholder {
+  &::placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+// Scrollbar styling
+@mixin scrollbar($width: 6px, $thumb-color: $color-grey-light, $track-color: $color-white) {
+  &::-webkit-scrollbar {
+    background-color: transparent;
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+    border-radius: $radius-lg;
+
+    &:hover {
+      background-color: $color-grey-dark;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $track-color;
+  }
+}
+

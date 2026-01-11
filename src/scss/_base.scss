@@ -1,0 +1,29 @@
+/**
+ * Base Styles
+ * Styles cơ bản cho toàn bộ ứng dụng
+ */
+
+// Page view
+.pageview {
+  overflow: hidden;
+}
+
+// No animation class
+.no-animate {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+// Lazy loading
+.lazy {
+  background: none !important;
+  -webkit-mask-image: none !important;
+}
+
+// Section container
+.section-container {
+  margin: auto;
+}
+
