@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="THƯ MỜI CƯỚI MẪU ĐỎ VÀNG">
+    <title>THƯ MỜI CƯỚI MẪU ĐỎ VÀNG</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/iconfont.css">
+    <link rel="stylesheet" href="/css/animatev4.css">
+    <link rel="stylesheet" href="/css/music-toggle.css">
+    <link rel="stylesheet" href="/css/spin-keyframes.css">
+    <link rel="stylesheet" href="/css/ejoy-styles.css">
+    <link rel="stylesheet" href="/css/custom-fonts.css">
+    <script>
+        // Early error handler - bắt lỗi từ extensions trước khi React load
+        (function() {
+            var ignoredErrors = [
+                'JSON.parse', 'undefined', 'runtime.lastError', 
+                'Receiving end does not exist', 'is not valid JSON',
+                'SOURCE_LANG', 'React DevTools', 'duplicate welcome', 'content script'
+            ];
+            
+            function shouldIgnore(message) {
+                if (!message || typeof message !== 'string') return false;
+                return ignoredErrors.some(function(ignored) {
+                    return message.includes(ignored);
+                });
+            }
+            
+            // Bắt unhandled promise rejections
+            window.addEventListener('unhandledrejection', function(event) {
+                var reason = event.reason;
+                if (reason) {
+                    var message = reason.message || reason.toString() || '';
+                    if (shouldIgnore(message)) {
+                        event.preventDefault();
+                        return false;
+                    }
+                    if (reason instanceof SyntaxError && message.includes('JSON')) {
+                        event.preventDefault();
+                        return false;
+                    }
+                    if (typeof reason === 'object' && reason.error) {
+                        if (shouldIgnore(String(reason.error))) {
+                            event.preventDefault();
+                            return false;
+                        }
+                    }
+                }
+            });
+
+            // Bắt global errors
+            window.addEventListener('error', function(event) {
+                if (shouldIgnore(event.message)) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        })();
+    </script>
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+</html>
+

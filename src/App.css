@@ -1,0 +1,12 @@
+/* App styles - các styles chính đã được load từ public/css/main.css */
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pageview {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+

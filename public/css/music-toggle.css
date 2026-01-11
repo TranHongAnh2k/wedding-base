@@ -1,0 +1,52 @@
+/* ====== STYLE: vị trí & hiệu ứng nút ====== */
+#music-toggle {
+  position: fixed;
+  left: 14px;   /* ghim bên trái */
+  bottom: 14px;
+  z-index: 99999;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3); /* nền trắng */
+  backdrop-filter: blur(4px);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+#music-toggle:hover {
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+#music-toggle img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+#music-toggle.vibrating {
+  animation: wc-pulse 1.6s ease-out infinite;
+  background: rgba(255, 255, 255, 0.3); /* nền trắng khi đang rung */
+}
+
+/* Ép hiển thị đúng icon trong mọi theme */
+#music-toggle #play-icon,
+#music-toggle #pause-icon {
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+}
+
+/* Tối ưu chạm cho mobile */
+@media (hover: none) {
+  #music-toggle { 
+    bottom: 12px; 
+    left: 12px; 
+  }
+}
+
