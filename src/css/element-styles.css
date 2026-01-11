@@ -1171,7 +1171,7 @@
   .form-wrapper input::placeholder,
   .form-wrapper .input-datetime-placeholder,
   .form-wrapper textarea::placeholder {
-    color: rgba(142, 1, 1, 1);
+    color: rgba(142, 1, 1, 1) !important;
   }
   .form-input-name {
     top: 0px;
@@ -1187,8 +1187,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-name input {
-    background: var(--bg-color-white-short);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white-short) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-submit-button {
     top: 234.5px;
@@ -1223,8 +1223,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-relation input {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-input-message {
     top: 114.5px;
@@ -1240,8 +1240,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-message input {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-select-attendance {
     top: 167.5px;
@@ -1257,11 +1257,11 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-select-attendance select {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-select-attendance .chevron .icon {
-    color: rgba(153, 0, 0, 1);
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-header-text {
     top: 14.333343505859375px;
@@ -4062,7 +4062,7 @@
   .form-wrapper input::placeholder,
   .form-wrapper .input-datetime-placeholder,
   .form-wrapper textarea::placeholder {
-    color: rgba(142, 1, 1, 1);
+    color: rgba(142, 1, 1, 1) !important;
   }
   .form-input-name {
     top: 0px;
@@ -4078,8 +4078,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-name input {
-    background: var(--bg-color-white-short);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white-short) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-submit-button {
     top: 234.5px;
@@ -4114,8 +4114,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-relation input {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-input-message {
     top: 114.5px;
@@ -4131,8 +4131,8 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-input-message input {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-select-attendance {
     top: 167.5px;
@@ -4148,11 +4148,11 @@
     color: rgba(153, 0, 0, 1);
   }
   .form-select-attendance select {
-    background: var(--bg-color-white);
-    color: rgba(153, 0, 0, 1);
+    background: var(--bg-color-white) !important;
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-select-attendance .chevron .icon {
-    color: rgba(153, 0, 0, 1);
+    color: rgba(153, 0, 0, 1) !important;
   }
   .form-header-text {
     top: 14.333343505859375px;
