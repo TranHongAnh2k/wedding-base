@@ -20,19 +20,19 @@ const GallerySection = () => {
 
   return (
     <>
-      <animated.div ref={galleryRef} style={galleryStyle} id="w-4vfmj0g5" className="com-section" data-section="">
+      <animated.div ref={galleryRef} style={galleryStyle} className="com-section gallery-section-1" data-section="">
         <div className="section-wrapper full-width full-height p-relative">
           <div className="section-background p-absolute full-width full-height"></div>
           <div className="section-container full-height p-relative">
-            <div id="w-8job6w7j" className="com-text-block p-absolute animation">
+            <div className="com-text-block p-absolute animation gallery-title">
               <div className="text-block">
                 <p className="text-block-css full-width">Album hình cưới</p>
               </div>
             </div>
             {gallery1Images.map((image) => (
               <GalleryImage
-                key={image.id}
-                id={image.id}
+                key={image.className}
+                className={image.className}
                 imageUrl={image.imageUrl}
                 animationType={image.animationType}
                 delay={image.delay}
@@ -42,14 +42,14 @@ const GallerySection = () => {
           </div>
         </div>
       </animated.div>
-      <animated.div ref={gallery2Ref} style={gallery2Style} id="w-ygrcn8t3" className="com-section" data-section="">
+      <animated.div ref={gallery2Ref} style={gallery2Style} className="com-section gallery-section-2" data-section="">
         <div className="section-wrapper full-width full-height p-relative">
           <div className="section-background p-absolute full-width full-height"></div>
           <div className="section-container full-height p-relative">
             {gallery2Images.map((image) => (
               <GalleryImage
-                key={image.id}
-                id={image.id}
+                key={image.className}
+                className={image.className}
                 imageUrl={image.imageUrl}
                 animationType={image.animationType}
                 delay={image.delay}

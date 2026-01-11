@@ -1,5 +1,5 @@
 /* ====== STYLE: vị trí & hiệu ứng nút ====== */
-#music-toggle {
+.music-toggle {
   position: fixed;
   left: 14px;   /* ghim bên trái */
   bottom: 14px;
@@ -17,12 +17,12 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-#music-toggle:hover {
+.music-toggle:hover {
   transform: translateY(-1px) scale(1.03);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
-#music-toggle img {
+.music-toggle img {
   display: block;
   width: 44px;
   height: 44px;
@@ -30,21 +30,21 @@
   pointer-events: none;
 }
 
-#music-toggle.vibrating {
+.music-toggle.vibrating {
   animation: wc-pulse 1.6s ease-out infinite;
   background: rgba(255, 255, 255, 0.3); /* nền trắng khi đang rung */
 }
 
 /* Ép hiển thị đúng icon trong mọi theme */
-#music-toggle #play-icon,
-#music-toggle #pause-icon {
+.music-toggle .play-icon,
+.music-toggle .pause-icon {
   backface-visibility: visible !important;
   -webkit-backface-visibility: visible !important;
 }
 
 /* Tối ưu chạm cho mobile */
 @media (hover: none) {
-  #music-toggle { 
+  .music-toggle { 
     bottom: 12px; 
     left: 12px; 
   }

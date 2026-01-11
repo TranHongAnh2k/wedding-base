@@ -62,20 +62,19 @@ const MusicToggle = () => {
     <>
       <audio
         ref={audioRef}
-        id="background-music"
+        className="background-music"
         src="https://statics.pancake.vn/web-media/5e/ee/bf/4a/afa10d3bdf98ca17ec3191ebbfd3c829d135d06939ee1f1b712d731d-w:0-h:0-l:2938934-t:audio/mpeg.mp3"
         preload="none"
         loop
       />
       <div
-        id="music-toggle"
-        className={isPlaying ? 'vibrating' : ''}
+        className={`music-toggle ${isPlaying ? 'vibrating' : ''}`}
         title="Bật / Tắt nhạc"
         aria-label="Bật / Tắt nhạc"
         onClick={handleToggle}
       >
         <img
-          id="play-icon"
+          className="play-icon"
           src={`${process.env.PUBLIC_URL}/images/play-icon.png`}
           alt="Play"
           width="44"
@@ -83,7 +82,7 @@ const MusicToggle = () => {
           style={{ display: isPlaying ? 'none' : 'block' }}
         />
         <img
-          id="pause-icon"
+          className="pause-icon"
           src={`${process.env.PUBLIC_URL}/images/pause-icon.gif`}
           alt="Pause"
           width="44"

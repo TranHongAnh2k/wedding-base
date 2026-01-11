@@ -5,7 +5,7 @@ import { useGalleryImageAnimation } from '../utils/useGalleryImageAnimation';
 /**
  * Component cho một gallery image với animation
  */
-const GalleryImage = ({ id, imageUrl, animationType, delay, triggerOnce = false }) => {
+const GalleryImage = ({ className, imageUrl, animationType, delay, triggerOnce = false }) => {
   const { ref, style } = useGalleryImageAnimation({ 
     animationType, 
     delay, 
@@ -20,8 +20,13 @@ const GalleryImage = ({ id, imageUrl, animationType, delay, triggerOnce = false 
     backgroundRepeat: 'no-repeat',
   } : {};
 
+  // Combine base classes with custom className
+  const combinedClassName = className 
+    ? `com-image-block p-absolute ${className}`
+    : 'com-image-block p-absolute';
+
   return (
-    <animated.div ref={ref} style={style} {...(id && { id })} className="com-image-block p-absolute">
+    <animated.div ref={ref} style={style} className={combinedClassName}>
       <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
         <div className="image-background p-absolute" style={backgroundStyle} role="img" aria-label=""></div>
         <div className="image-gradient-border"></div>
