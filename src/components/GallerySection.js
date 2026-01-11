@@ -1,13 +1,26 @@
 import React from 'react';
+import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
+import GalleryImage from './GalleryImage';
+import { gallery1Images, gallery2Images } from '../config/galleryConfig';
 
 const GallerySection = () => {
-  const galleryRef = useScrollReveal({ threshold: 0.1, rootMargin: '0px' });
-  const gallery2Ref = useScrollReveal({ threshold: 0.1, rootMargin: '0px' });
+  const { ref: galleryRef, style: galleryStyle } = useScrollReveal({ 
+    threshold: 0.1, 
+    rootMargin: '0px',
+    from: { opacity: 0, y: 30 },
+    to: { opacity: 1, y: 0 }
+  });
+  const { ref: gallery2Ref, style: gallery2Style } = useScrollReveal({ 
+    threshold: 0.1, 
+    rootMargin: '0px',
+    from: { opacity: 0, y: 30 },
+    to: { opacity: 1, y: 0 }
+  });
 
   return (
     <>
-      <div ref={galleryRef} id="w-4vfmj0g5" className="com-section" data-section="">
+      <animated.div ref={galleryRef} style={galleryStyle} id="w-4vfmj0g5" className="com-section" data-section="">
         <div className="section-wrapper full-width full-height p-relative">
           <div className="section-background p-absolute full-width full-height"></div>
           <div className="section-container full-height p-relative">
@@ -16,76 +29,36 @@ const GallerySection = () => {
                 <p className="text-block-css full-width">Album hình cưới</p>
               </div>
             </div>
-            <div id="w-8k7luhft" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-damsktmr" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-mibzihv0" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-ui8sxx6m" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-grkveilf" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-y4blj2tv" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
+            {gallery1Images.map((image) => (
+              <GalleryImage
+                key={image.id}
+                id={image.id}
+                imageUrl={image.imageUrl}
+                animationType={image.animationType}
+                delay={image.delay}
+                triggerOnce={false}
+              />
+            ))}
           </div>
         </div>
-      </div>
-      <div ref={gallery2Ref} id="w-ygrcn8t3" className="com-section" data-section="">
+      </animated.div>
+      <animated.div ref={gallery2Ref} style={gallery2Style} id="w-ygrcn8t3" className="com-section" data-section="">
         <div className="section-wrapper full-width full-height p-relative">
           <div className="section-background p-absolute full-width full-height"></div>
           <div className="section-container full-height p-relative">
-            <div id="w-zzn6hpkr" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-jz70nzjp" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-05hqo9e4" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
-            <div id="w-m5s2x14e" className="com-image-block p-absolute animation">
-              <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-                <div className="image-background p-absolute" role="img" aria-label=""></div>
-                <div className="image-gradient-border"></div>
-              </div>
-            </div>
+            {gallery2Images.map((image) => (
+              <GalleryImage
+                key={image.id}
+                id={image.id}
+                imageUrl={image.imageUrl}
+                animationType={image.animationType}
+                delay={image.delay}
+                triggerOnce={false}
+              />
+            ))}
           </div>
         </div>
-      </div>
+      </animated.div>
     </>
   );
 };

@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
+import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
 
 const FormSection = () => {
-  const sectionRef = useScrollReveal({ threshold: 0.1, rootMargin: '0px' });
+  const { ref, style } = useScrollReveal({ 
+    threshold: 0.1, 
+    rootMargin: '0px',
+    from: { opacity: 0, y: 30 },
+    to: { opacity: 1, y: 0 }
+  });
   const [formData, setFormData] = useState({
     full_name: '',
     text_input_1: '',
@@ -25,7 +31,7 @@ const FormSection = () => {
   };
 
   return (
-    <div ref={sectionRef} id="w-j6a4d4fc" className="com-section" data-section="">
+    <animated.div ref={ref} style={style} id="w-j6a4d4fc" className="com-section" data-section="">
       <div className="section-wrapper full-width full-height p-relative">
         <div className="section-background p-absolute full-width full-height"></div>
         <div className="section-container full-height p-relative">
@@ -129,7 +135,7 @@ const FormSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 

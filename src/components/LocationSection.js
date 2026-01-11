@@ -1,11 +1,17 @@
 import React from 'react';
+import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
 
 const LocationSection = () => {
-  const sectionRef = useScrollReveal({ threshold: 0.1, rootMargin: '0px' });
+  const { ref, style } = useScrollReveal({ 
+    threshold: 0.1, 
+    rootMargin: '0px',
+    from: { opacity: 0, y: 30 },
+    to: { opacity: 1, y: 0 }
+  });
 
   return (
-    <div ref={sectionRef} id="w-rs50dgw2" className="com-section" data-section="">
+    <animated.div ref={ref} style={style} id="w-rs50dgw2" className="com-section" data-section="">
       <div className="section-wrapper full-width full-height p-relative">
         <div className="section-background p-absolute full-width full-height"></div>
         <div className="section-container full-height p-relative">
@@ -54,7 +60,7 @@ const LocationSection = () => {
           </a>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 };
 
