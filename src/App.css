@@ -10,3 +10,182 @@
   position: relative;
 }
 
+/* Choose Side Modal Styles */
+.choose-side-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.choose-side-modal-content {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.choose-side-modal-header {
+  margin-bottom: 30px;
+}
+
+.choose-side-modal-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.choose-side-modal-header p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+.choose-side-modal-name-input {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.guest-name-input {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+  background: white;
+  box-sizing: border-box;
+}
+
+.guest-name-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.guest-name-input::placeholder {
+  color: #999;
+}
+
+.input-error {
+  color: #f5576c;
+  font-size: 14px;
+  margin-top: 8px;
+  text-align: left;
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.choose-side-modal-buttons {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.choose-side-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 100%;
+}
+
+.choose-side-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.choose-side-button:active {
+  transform: translateY(-2px);
+}
+
+.groom-button:hover {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.bride-button:hover {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.button-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.button-text {
+  flex: 1;
+}
+
+.button-text h3 {
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  font-weight: 600;
+  color: inherit;
+}
+
+.button-text p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  .choose-side-modal-content {
+    padding: 30px 20px;
+  }
+  
+  .choose-side-modal-header h2 {
+    font-size: 24px;
+  }
+  
+  .button-icon {
+    font-size: 40px;
+  }
+  
+  .button-text h3 {
+    font-size: 20px;
+  }
+}
+
+/* Form Submit Message Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.form-submit-message {
+  animation: fadeIn 0.3s ease-in;
+}
+

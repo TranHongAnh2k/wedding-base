@@ -1,9 +1,11 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
-import { LOCATION_INFO } from '../constants/weddingInfo';
+import { GROOM_LOCATION_INFO, BRIDE_LOCATION_INFO } from '../constants/weddingInfo';
 
-const LocationSection = () => {
+const LocationSection = ({ side = 'groom' }) => {
+  // Chọn thông tin địa chỉ dựa vào side
+  const locationInfo = side === 'bride' ? BRIDE_LOCATION_INFO : GROOM_LOCATION_INFO;
   const { ref, style } = useScrollReveal({ 
     threshold: 0.1, 
     rootMargin: '0px',
@@ -35,14 +37,14 @@ const LocationSection = () => {
           </div>
           <div className="com-text-block p-absolute animation location-header-text">
             <div className="text-block">
-              <p className="text-block-css full-width">{LOCATION_INFO.HEADER}<br /></p>
+              <p className="text-block-css full-width">{locationInfo.HEADER}<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation location-address">
             <div className="text-block">
               <p className="text-block-css full-width">
-                {LOCATION_INFO.ADDRESS_LINES.map((line) => (
-                  <React.Fragment key={line}>
+                {locationInfo.ADDRESS_LINES.map((line, index) => (
+                  <React.Fragment key={index}>
                     {line}
                     <br />
                   </React.Fragment>
@@ -53,19 +55,19 @@ const LocationSection = () => {
           <div className="com-text-block p-absolute animation location-venue-name">
             <div className="text-block">
               <p className="text-block-css full-width">
-                <span style={{fontWeight: 700}}>{LOCATION_INFO.VENUE_NAME}</span>
+                <span style={{fontWeight: 700}}>{locationInfo.VENUE_NAME}</span>
                 <br />
               </p>
             </div>
           </div>
           <a
-            href={LOCATION_INFO.MAP_URL}
-            title={`Open link ${LOCATION_INFO.MAP_URL}`}
+            href={locationInfo.MAP_URL}
+            title={`Open link ${locationInfo.MAP_URL}`}
             className="com-button p-absolute cursor-pointer animation location-map-button"
           >
             <div className="button-css full-height full-width">
               <span className="button-loader"></span>
-              <div className="button-text full-width u-select-none">{LOCATION_INFO.MAP_CTA}</div>
+              <div className="button-text full-width u-select-none">{locationInfo.MAP_CTA}</div>
             </div>
           </a>
         </div>

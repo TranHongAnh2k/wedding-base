@@ -1,9 +1,11 @@
 import React from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
-import { EVENT_INFO } from '../constants/weddingInfo';
+import { EVENT_INFO, GROOM_EVENT_INFO, BRIDE_EVENT_INFO } from '../constants/weddingInfo';
 
-const DateSection = () => {
+const DateSection = ({ side = 'groom' }) => {
+  // Chọn thông tin thời gian dựa vào side
+  const eventTimeInfo = side === 'bride' ? BRIDE_EVENT_INFO : GROOM_EVENT_INFO;
   const { ref, style } = useScrollReveal({ 
     threshold: 0.1, 
     rootMargin: '0px',
@@ -62,7 +64,7 @@ const DateSection = () => {
           </div>
           <div className="com-text-block p-absolute animation date-time">
             <div className="text-block">
-              <p className="text-block-css full-width">{EVENT_INFO.TIME}<br /></p>
+              <p className="text-block-css full-width">{eventTimeInfo.TIME}<br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation date-year">
