@@ -53,7 +53,9 @@
 @import '../css/animatev4.css';
 @import '../css/spin-keyframes.css';
 @import '../css/ejoy-styles.css';
-
+html, body {
+    overflow-x: hidden !important;
+}
 // Note: element-styles.css và dynamic-styles.css (minified) 
 // được import trực tiếp trong index.js để tránh lỗi parse SCSS
 

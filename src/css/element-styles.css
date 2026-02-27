@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Element Styles
  * 
  * Auto-generated styles for wedding page elements.
@@ -28,6 +28,20 @@
     max-width: 420px;
     margin: 0 auto;
   }
+  .gallery-grid-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 140%;
+  }
+  .gallery-grid-item .gallery-grid-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+  }
   .hero-section {
     top: 0px;
     left: 0px;
@@ -42,8 +56,7 @@
     margin-bottom: -1px;
   }
   .hero-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .hero-decorative-image-1 {
@@ -87,7 +100,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -131,7 +144,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     letter-spacing: 3px;
     line-height: 1.5;
@@ -279,7 +292,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "SVN-Mightiest.otf", sans-serif;
+    font-family: 'SVN-Mightiest.otf', sans-serif;
     font-size: 22px;
     line-height: 1.5;
     text-align: center;
@@ -310,7 +323,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(125, 31, 42, 1);
-    font-family: "AlexBrush-Regular.ttf", sans-serif;
+    font-family: 'AlexBrush-Regular.ttf', sans-serif;
     font-size: 32px;
     line-height: 1.5;
     text-align: center;
@@ -390,8 +403,7 @@
     margin-bottom: -1px;
   }
   .couple-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .couple-header-text {
@@ -408,7 +420,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "BlackMango-Medium.otf", sans-serif;
+    font-family: 'BlackMango-Medium.otf', sans-serif;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
@@ -428,7 +440,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -451,7 +463,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -474,7 +486,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -549,10 +561,9 @@
     z-index: null;
   }
   .couple-main-image .image-background {
-    width: 404.64220183486236px;
-    height: 544px;
-    top: -59px;
-    left: -28.76350662589195px;
+    width: 100%;
+    height: 100%;
+
     background: center center/ cover no-repeat scroll content-box border-box
       var(--bg-image-couple-main);
     --type: 0;
@@ -574,7 +585,7 @@
   .couple-groom-side-label .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -591,7 +602,7 @@
   .couple-bride-side-label .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -640,7 +651,7 @@
   .couple-groom-parents .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -657,7 +668,7 @@
   .couple-bride-parents .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -676,8 +687,7 @@
     margin-bottom: -1px;
   }
   .date-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .date-day-number {
@@ -692,7 +702,7 @@
   .date-day-number .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -717,8 +727,7 @@
     height: 165px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-1);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-1);
     --type: 0;
   }
   .date-image-1 .image-background-compare {
@@ -743,8 +752,7 @@
     height: 174.06799531066824px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-2);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-2);
     --type: 0;
   }
   .date-image-2 .image-background-compare {
@@ -770,8 +778,7 @@
     height: 174.502050380785px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-3);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-3);
     --type: 0;
   }
   .date-image-3 .image-background-compare {
@@ -793,7 +800,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 25px;
     line-height: 1.5;
     text-align: center;
@@ -817,7 +824,7 @@
     height: 166px;
     top: -63px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
+    background: center center/ cover no-repeat content-box border-box
       var(--bg-image-date-decoration);
     --type: 0;
   }
@@ -838,7 +845,7 @@
   .date-event-description .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -856,7 +863,7 @@
   .date-time .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -874,7 +881,7 @@
   .date-year .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -925,7 +932,7 @@
   .date-lunar-date .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-style: italic;
     letter-spacing: 1px;
@@ -944,7 +951,7 @@
   .date-weekday .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-align: center;
@@ -962,7 +969,7 @@
   .date-month .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-align: center;
@@ -982,8 +989,7 @@
     margin-bottom: -1px;
   }
   .location-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .location-frame {
@@ -1066,7 +1072,7 @@
   .location-header-text .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -1084,7 +1090,7 @@
   .location-address .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "SVN-Gilroy-Italic.otf", sans-serif;
+    font-family: 'SVN-Gilroy-Italic.otf', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -1102,7 +1108,7 @@
   .location-venue-name .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "SVN-Gilroy-Bold-Italic.otf", sans-serif;
+    font-family: 'SVN-Gilroy-Bold-Italic.otf', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -1121,7 +1127,7 @@
     border-style: solid;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: rgba(255, 255, 255, 1);
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 15px;
     background: var(--bg-color-primary-red);
     --type: 0;
@@ -1140,8 +1146,7 @@
     margin-bottom: -1px;
   }
   .form-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .form-container {
@@ -1277,7 +1282,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 30px;
     line-height: 1;
     text-align: center;
@@ -1329,7 +1334,7 @@
     left: 0px;
     position: relative;
     width: 420px;
-    height: 632px;
+    height: auto;
   }
   .gallery-section-1 .section-wrapper {
     opacity: 1;
@@ -1338,8 +1343,7 @@
     margin-bottom: -1px;
   }
   .gallery-section-1 .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .gallery-title {
@@ -1354,7 +1358,7 @@
   .gallery-title .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 32px;
     text-align: center;
     --type: 0;
@@ -1377,9 +1381,7 @@
     height: 268.92018779342726px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-1)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-gallery-1);
     --type: 0;
   }
   .gallery-image-item-1 .image-background-compare {
@@ -1405,9 +1407,7 @@
     height: 273.35446906035145px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-2)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-2 .image-background-compare {
@@ -1432,9 +1432,7 @@
     height: 268.92018779342726px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-3)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-3 .image-background-compare {
@@ -1460,8 +1458,7 @@
     height: 119.86080228268835px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-gallery-4);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-4 .image-background-compare {
@@ -1487,8 +1484,7 @@
     height: 137.95714818194674px;
     top: 0px;
     left: -0.2945290004113659px;
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-gallery-5);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-5 .image-background-compare {
@@ -1514,8 +1510,7 @@
     height: 166px;
     top: -63px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-decoration);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-6 .image-background-compare {
@@ -1537,8 +1532,7 @@
     margin-bottom: -1px;
   }
   .gallery-section-2 .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .gallery-image-item-7 {
@@ -1558,8 +1552,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s578x867/fwebp/cb/87/1f/67/25cdb38375c4ffc82ea938461257c5fbb49f3407e402f3e6ff903387-w:854-h:1280-l:160168-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-7 .image-background-compare {
@@ -1585,8 +1578,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s587x841/fwebp/43/f6/88/e6/33fad2e85f20c3cab3d076535139371b0378fccc049b1083efffb1c5-w:894-h:1280-l:100553-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-8 .image-background-compare {
@@ -1611,8 +1603,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s578x867/fwebp/ad/c0/11/16/06080e040619cef49e87d7e06a574eb61310d3dc4bdc9f0fec3638c9-w:854-h:1280-l:259362-t:image/jpeg.png");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-9 .image-background-compare {
@@ -1638,8 +1629,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s580x862/fwebp/9d/60/03/fe/ecbd36b01369b3064a01426c59166451161e648939a52fd952564e21-w:862-h:1280-l:233470-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-10 .image-background-compare {
@@ -1726,8 +1716,8 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     border-width: 0px;
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
     position: absolute;
     z-index: null;
   }
@@ -1758,9 +1748,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(255, 255, 255, 1);
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 38px;
     text-align: center;
     --type: 0;
@@ -1816,10 +1806,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     transform: translateZ(0);
-    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%)
-      saturate(100%) sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    background: center center/ contain no-repeat scroll content-box
-      var(--bg-image-social-close)
+    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    background: center center/ contain no-repeat scroll content-box var(--bg-image-social-close)
       border-box;
     background-clip: padding-box;
   }
@@ -1838,7 +1827,7 @@
   }
   #w-c5h3kygg .rectangle-css.fb {
     background: center center/ contain no-repeat scroll content-box border-box
-      url("https://content.pancake.vn/1/s442x442/fpng/36/b3/ec/ae/eb9548e74deddff898a48c5caa4791b84669476bafc00e5c1704e002-w:980-h:980-l:7525-t:image/webp.webp");
+      url('https://content.pancake.vn/1/s442x442/fpng/36/b3/ec/ae/eb9548e74deddff898a48c5caa4791b84669476bafc00e5c1704e002-w:980-h:980-l:7525-t:image/webp.webp');
     --type: 0;
   }
   #w-u41bjerq {
@@ -1851,11 +1840,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     transform: translateZ(0);
-    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%)
-      saturate(100%) sepia(0%) opacity(100%) brightness(100%) blur(0px);
-    background: center center/ cover no-repeat content-box
-      var(--bg-image-social-share)
-      border-box;
+    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%)
+      opacity(100%) brightness(100%) blur(0px);
+    background: center center/ cover no-repeat content-box var(--bg-image-social-share) border-box;
     background-clip: padding-box;
   }
   #w-g94e1435 {
@@ -1895,8 +1882,7 @@
     display: none;
   }
   #w-__popup_default__ .popup-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-popup-default);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-popup-default);
     border-color: rgba(76, 175, 80, 0.8);
     border-radius: 13px;
     border-style: solid;
@@ -1945,8 +1931,8 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     border-width: 0px;
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
     position: absolute;
     z-index: null;
   }
@@ -1977,9 +1963,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(255, 255, 255, 1);
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 38px;
     text-align: center;
     --type: 0;
@@ -2088,7 +2074,7 @@
   #w-xkuj2dzk .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 17px;
     font-weight: bold;
     text-align: center;
@@ -2919,6 +2905,20 @@
     margin: 0 auto;
     max-width: 420px;
   }
+  .gallery-grid-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 140%;
+  }
+  .gallery-grid-item .gallery-grid-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    display: block;
+  }
   .hero-section {
     top: 0px;
     left: 0px;
@@ -2933,8 +2933,7 @@
     margin-bottom: -1px;
   }
   .hero-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .hero-decorative-image-1 {
@@ -2978,7 +2977,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -3022,7 +3021,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     letter-spacing: 3px;
     line-height: 1.5;
@@ -3170,7 +3169,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "SVN-Mightiest.otf", sans-serif;
+    font-family: 'SVN-Mightiest.otf', sans-serif;
     font-size: 22px;
     line-height: 1.5;
     text-align: center;
@@ -3201,7 +3200,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(125, 31, 42, 1);
-    font-family: "AlexBrush-Regular.ttf", sans-serif;
+    font-family: 'AlexBrush-Regular.ttf', sans-serif;
     font-size: 32px;
     line-height: 1.5;
     text-align: center;
@@ -3281,8 +3280,7 @@
     margin-bottom: -1px;
   }
   .couple-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .couple-header-text {
@@ -3299,7 +3297,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "BlackMango-Medium.otf", sans-serif;
+    font-family: 'BlackMango-Medium.otf', sans-serif;
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
@@ -3319,7 +3317,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -3342,7 +3340,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Sloop-1.ttf", sans-serif;
+    font-family: 'UTM-Sloop-1.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -3365,7 +3363,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
@@ -3440,12 +3438,12 @@
     z-index: null;
   }
   .couple-main-image .image-background {
-    width: 404.64220183486236px;
-    height: 544px;
-    top: -59px;
-    left: -28.76350662589195px;
+    width: 100%;
+    height: 100%;
+
     background: center center/ cover no-repeat scroll content-box border-box
       var(--bg-image-couple-main);
+    --type: 0;
     --type: 0;
   }
   .couple-main-image .image-background-compare {
@@ -3465,7 +3463,7 @@
   .couple-groom-side-label .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -3482,7 +3480,7 @@
   .couple-bride-side-label .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -3531,7 +3529,7 @@
   .couple-groom-parents .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -3548,7 +3546,7 @@
   .couple-bride-parents .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "UTM-Cafeta.ttf", sans-serif;
+    font-family: 'UTM-Cafeta.ttf', sans-serif;
     font-size: 16px;
     text-align: center;
     --type: 0;
@@ -3567,8 +3565,7 @@
     margin-bottom: -1px;
   }
   .date-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .date-day-number {
@@ -3583,7 +3580,7 @@
   .date-day-number .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 35px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -3608,8 +3605,7 @@
     height: 165px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-1);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-1);
     --type: 0;
   }
   .date-image-1 .image-background-compare {
@@ -3634,8 +3630,7 @@
     height: 174.06799531066824px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-2);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-2);
     --type: 0;
   }
   .date-image-2 .image-background-compare {
@@ -3661,8 +3656,7 @@
     height: 174.502050380785px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-3);
+    background: center center/ cover no-repeat scroll content-box border-box var(--bg-image-date-3);
     --type: 0;
   }
   .date-image-3 .image-background-compare {
@@ -3684,7 +3678,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 25px;
     line-height: 1.5;
     text-align: center;
@@ -3708,7 +3702,7 @@
     height: 166px;
     top: -63px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
+    background: center center/ cover no-repeat content-box border-box
       var(--bg-image-date-decoration);
     --type: 0;
   }
@@ -3729,7 +3723,7 @@
   .date-event-description .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -3747,7 +3741,7 @@
   .date-time .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -3765,7 +3759,7 @@
   .date-year .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -3816,7 +3810,7 @@
   .date-lunar-date .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     font-style: italic;
     letter-spacing: 1px;
@@ -3835,7 +3829,7 @@
   .date-weekday .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-align: center;
@@ -3853,7 +3847,7 @@
   .date-month .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 3px;
     text-align: center;
@@ -3873,8 +3867,7 @@
     margin-bottom: -1px;
   }
   .location-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .location-frame {
@@ -3957,7 +3950,7 @@
   .location-header-text .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -3975,7 +3968,7 @@
   .location-address .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "SVN-Gilroy-Italic.otf", sans-serif;
+    font-family: 'SVN-Gilroy-Italic.otf', sans-serif;
     font-size: 14px;
     letter-spacing: 1px;
     text-align: center;
@@ -3993,7 +3986,7 @@
   .location-venue-name .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "SVN-Gilroy-Bold-Italic.otf", sans-serif;
+    font-family: 'SVN-Gilroy-Bold-Italic.otf', sans-serif;
     font-size: 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -4012,7 +4005,7 @@
     border-style: solid;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: rgba(255, 255, 255, 1);
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 15px;
     background: var(--bg-color-primary-red);
     --type: 0;
@@ -4031,8 +4024,7 @@
     margin-bottom: -1px;
   }
   .form-section .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .form-container {
@@ -4168,7 +4160,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 30px;
     line-height: 1;
     text-align: center;
@@ -4220,7 +4212,7 @@
     left: 0px;
     position: relative;
     width: 420px;
-    height: 632px;
+    height: auto;
   }
   .gallery-section-1 .section-wrapper {
     opacity: 1;
@@ -4229,8 +4221,7 @@
     margin-bottom: -1px;
   }
   .gallery-section-1 .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .gallery-title {
@@ -4245,7 +4236,7 @@
   .gallery-title .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 32px;
     text-align: center;
     --type: 0;
@@ -4268,9 +4259,7 @@
     height: 268.92018779342726px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-1)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-1 .image-background-compare {
@@ -4296,9 +4285,7 @@
     height: 273.35446906035145px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-2)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-2 .image-background-compare {
@@ -4323,9 +4310,7 @@
     height: 268.92018779342726px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box
-      var(--bg-image-gallery-3)
-      border-box;
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-3 .image-background-compare {
@@ -4351,8 +4336,7 @@
     height: 119.86080228268835px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-gallery-4);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-4 .image-background-compare {
@@ -4378,8 +4362,7 @@
     height: 137.95714818194674px;
     top: 0px;
     left: -0.2945290004113659px;
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-gallery-5);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-5 .image-background-compare {
@@ -4405,8 +4388,7 @@
     height: 166px;
     top: -63px;
     left: 0px;
-    background: center center/ cover no-repeat scroll content-box border-box
-      var(--bg-image-date-decoration);
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-6 .image-background-compare {
@@ -4428,8 +4410,7 @@
     margin-bottom: -1px;
   }
   .gallery-section-2 .section-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-section-main);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
     --type: 0;
   }
   .gallery-image-item-7 {
@@ -4449,8 +4430,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s578x867/fwebp/cb/87/1f/67/25cdb38375c4ffc82ea938461257c5fbb49f3407e402f3e6ff903387-w:854-h:1280-l:160168-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-7 .image-background-compare {
@@ -4476,8 +4456,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s587x841/fwebp/43/f6/88/e6/33fad2e85f20c3cab3d076535139371b0378fccc049b1083efffb1c5-w:894-h:1280-l:100553-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-8 .image-background-compare {
@@ -4502,8 +4481,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s578x867/fwebp/ad/c0/11/16/06080e040619cef49e87d7e06a574eb61310d3dc4bdc9f0fec3638c9-w:854-h:1280-l:259362-t:image/jpeg.png");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-9 .image-background-compare {
@@ -4529,8 +4507,7 @@
     height: 267.89537223340045px;
     top: 0px;
     left: 0px;
-    background: center center/ cover no-repeat content-box border-box
-      url("https://content.pancake.vn/1/s580x862/fwebp/9d/60/03/fe/ecbd36b01369b3064a01426c59166451161e648939a52fd952564e21-w:862-h:1280-l:233470-t:image/jpeg.jpg");
+    background: center center/ cover no-repeat content-box border-box;
     --type: 0;
   }
   .gallery-image-item-10 .image-background-compare {
@@ -4617,8 +4594,8 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     border-width: 0px;
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
     position: absolute;
     z-index: null;
   }
@@ -4649,9 +4626,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(255, 255, 255, 1);
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 38px;
     text-align: center;
     --type: 0;
@@ -4707,10 +4684,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     transform: translateZ(0);
-    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%)
-      saturate(100%) sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    background: center center/ contain no-repeat scroll content-box
-      var(--bg-image-social-close)
+    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    background: center center/ contain no-repeat scroll content-box var(--bg-image-social-close)
       border-box;
     background-clip: padding-box;
   }
@@ -4729,7 +4705,7 @@
   }
   #w-c5h3kygg .rectangle-css.fb {
     background: center center/ contain no-repeat scroll content-box border-box
-      url("https://content.pancake.vn/1/s442x442/fpng/36/b3/ec/ae/eb9548e74deddff898a48c5caa4791b84669476bafc00e5c1704e002-w:980-h:980-l:7525-t:image/webp.webp");
+      url('https://content.pancake.vn/1/s442x442/fpng/36/b3/ec/ae/eb9548e74deddff898a48c5caa4791b84669476bafc00e5c1704e002-w:980-h:980-l:7525-t:image/webp.webp');
     --type: 0;
   }
   #w-u41bjerq {
@@ -4742,11 +4718,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     transform: translateZ(0);
-    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%)
-      saturate(100%) sepia(0%) opacity(100%) brightness(100%) blur(0px);
-    background: center center/ cover no-repeat content-box
-      var(--bg-image-social-share)
-      border-box;
+    filter: contrast(100%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(100%) sepia(0%)
+      opacity(100%) brightness(100%) blur(0px);
+    background: center center/ cover no-repeat content-box var(--bg-image-social-share) border-box;
     background-clip: padding-box;
   }
   #w-g94e1435 {
@@ -4786,8 +4760,7 @@
     display: none;
   }
   #w-__popup_default__ .popup-background {
-    background: center center/ cover no-repeat content-box border-box
-      var(--bg-image-popup-default);
+    background: center center/ cover no-repeat content-box border-box var(--bg-image-popup-default);
     border-color: rgba(76, 175, 80, 0.8);
     border-radius: 13px;
     border-style: solid;
@@ -4836,8 +4809,8 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     border-width: 0px;
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
     position: absolute;
     z-index: null;
   }
@@ -4868,9 +4841,9 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(255, 255, 255, 1);
-    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%)
-      sepia(0%) opacity(100%) brightness(200%) blur(0px);
-    font-family: "UTM-Azkia.ttf", sans-serif;
+    filter: contrast(0%) grayscale(43%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%)
+      opacity(100%) brightness(200%) blur(0px);
+    font-family: 'UTM-Azkia.ttf', sans-serif;
     font-size: 38px;
     text-align: center;
     --type: 0;
@@ -4934,7 +4907,7 @@
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    font-family: "Ephesis-Regular.ttf", sans-serif;
+    font-family: 'Ephesis-Regular.ttf', sans-serif;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
@@ -4979,7 +4952,7 @@
   #w-xkuj2dzk .text-block-css {
     border-color: rgba(229, 231, 235, 1);
     border-style: solid;
-    font-family: "Arial", sans-serif;
+    font-family: 'Arial', sans-serif;
     font-size: 17px;
     font-weight: bold;
     text-align: center;

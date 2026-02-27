@@ -86,7 +86,7 @@
      ============================================ */
 
   /* Hero main image */
-  --bg-image-hero-main: url("https://content.pancake.vn/1/s654x981/fwebp/ab/56/c3/d2/ae46af903d624877e4e71b00dc5ab4badaa10a8956d3c389ccbc73e9-w:1080-h:1620-l:151635-t:image/jpeg.jpeg");
+  --bg-image-hero-main: url("https://static-ai-lab.edupia.vn/test-image/image3.jpg");
 
   /* Hero decorative images */
   --bg-image-hero-decorative-1: url("https://content.pancake.vn/1/s487x487/fwebp/c9/7c/2a/c5/5ba36c13eb69d83d80e92d1a2eee50cfee36e987297533b6480719a7-w:500-h:500-l:12182-t:image/png.png");
@@ -99,7 +99,7 @@
      ============================================ */
 
   /* Couple main image */
-  --bg-image-couple-main: url("https://content.pancake.vn/1/fwebp/e2/8c/c5/37/905dccbcd5bc1c1b602c10c95acb9986765f735e075bff1097e7f457-w:736-h:981-l:47868-t:image/jpeg.jfif");
+  --bg-image-couple-main: url("https://static-ai-lab.edupia.vn/test-image/image10.jpg");
 
   /* Couple decorative images */
   --bg-image-couple-decorative-1: url("https://content.pancake.vn/1/s486x486/fwebp/5d/4d/ed/50/c176e3fd3e67b078488c02451f6a09af9fe9e929c4f113f5c162595e-w:500-h:500-l:22239-t:image/png.png");
@@ -110,9 +110,9 @@
      ============================================ */
 
   /* Date images */
-  --bg-image-date-1: url("https://content.pancake.vn/1/s523x697/fwebp/21/54/83/cb/163b4872b6600196d0ac068b1f046c5dd5f9d20c3ddad5e7c0abea9b-w:736-h:980-l:48194-t:image/jpeg.jfif");
-  --bg-image-date-2: url("https://content.pancake.vn/1/s516x775/fwebp/3c/3b/ca/e1/e12ca0e6af675d653327f5a3b5d2c7c2385f71d26b8fee7604b45828-w:1706-h:2560-l:224512-t:image/jpeg.jpg");
-  --bg-image-date-3: url("https://content.pancake.vn/1/s516x774/fwebp/6f/2b/71/1d/03a457a718b5bf78c5639d6de0521b7a19ec698dcd5737408a50bd16-w:1707-h:2560-l:275640-t:image/jpeg.jpg");
+  --bg-image-date-1: url("https://static-ai-lab.edupia.vn/test-image/image4.jpg");
+  --bg-image-date-2: url("https://static-ai-lab.edupia.vn/test-image/image5.jpg");
+  --bg-image-date-3: url("https://static-ai-lab.edupia.vn/test-image/image6.jpg");
   --bg-image-date-decoration: url("https://content.pancake.vn/1/fwebp/80/ac/eb/cf/85e75c674913047eea133813069cf9dc6d9a1acadb58c454077c94c5-w:500-h:500-l:9074-t:image/png.png");
 
   /* ============================================
@@ -128,11 +128,11 @@
      ============================================ */
 
   /* Gallery images (sample - có thể thêm nhiều hơn) */
-  --bg-image-gallery-1: url(https://content.pancake.vn/web-media/e9/80/6a/05/fcf14d0545da0e656237816d3712c50d2792afda074a96abfd9bcec5-w:878-h:1280-l:99344-t:image/jpeg.png);
+  /* --bg-image-gallery-1: url(https://content.pancake.vn/web-media/e9/80/6a/05/fcf14d0545da0e656237816d3712c50d2792afda074a96abfd9bcec5-w:878-h:1280-l:99344-t:image/jpeg.png);
   --bg-image-gallery-2: url(https://content.pancake.vn/web-media/09/00/8a/b4/692735fdc0775ae1530963a767ce4264df77078f659771a3cde9c5ac-w:840-h:1280-l:177736-t:image/jpeg.png);
   --bg-image-gallery-3: url(https://content.pancake.vn/web-media/84/b3/f5/cd/cc7957b9f0e497f01a17d05f9e73406b7650b249c169b424c7ee1767-w:854-h:1280-l:94691-t:image/jpeg.png);
   --bg-image-gallery-4: url("https://content.pancake.vn/1/s779x520/fwebp/60/b1/5e/e9/89fd2d2d6cd9a62db6e70776243eb9ed8603fc1fb415bdc95da92104-w:1286-h:857-l:255701-t:image/jpeg.jpg");
-  --bg-image-gallery-5: url("https://content.pancake.vn/1/s699x538/fwebp/7a/e8/d6/f6/da197a5a3542dfe09e7faa9e118999103385582808a2e2014fc72986-w:1286-h:988-l:154700-t:image/jpeg.jpg");
+  --bg-image-gallery-5: url("https://content.pancake.vn/1/s699x538/fwebp/7a/e8/d6/f6/da197a5a3542dfe09e7faa9e118999103385582808a2e2014fc72986-w:1286-h:988-l:154700-t:image/jpeg.jpg"); */
 
   /* ============================================
      BACKGROUND IMAGES - POPUPS & UI

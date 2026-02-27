@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import MusicToggle from './components/MusicToggle';
-import HeroSection from './components/HeroSection';
+import { useEffect, useState } from 'react';
+import './App.css';
+import ChooseSideModal from './components/ChooseSideModal';
 import CoupleSection from './components/CoupleSection';
 import DateSection from './components/DateSection';
-import LocationSection from './components/LocationSection';
 import FormSection from './components/FormSection';
-import MessagesSection from './components/MessagesSection';
 import GallerySection from './components/GallerySection';
-import ChooseSideModal from './components/ChooseSideModal';
+import HeroSection from './components/HeroSection';
+import LocationSection from './components/LocationSection';
+import MusicToggle from './components/MusicToggle';
+import ThankYouSection from './components/ThankYouSection';
 import { initStyles } from './utils/initStyles';
-import './App.css';
 
 function App() {
   const [selectedSide, setSelectedSide] = useState(null);
@@ -130,6 +130,7 @@ function App() {
           <FormSection side={selectedSide} />
           {/* <MessagesSection side={selectedSide} /> */}
           <GallerySection />
+          {/* <ThankYouSection guestName={guestName} /> */}
           <MusicToggle />
         </div>
       )}

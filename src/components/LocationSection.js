@@ -64,6 +64,7 @@ const LocationSection = ({ side = 'groom' }) => {
             href={locationInfo.MAP_URL}
             title={`Open link ${locationInfo.MAP_URL}`}
             className="com-button p-absolute cursor-pointer animation location-map-button"
+            target='_blank'
           >
             <div className="button-css full-height full-width">
               <span className="button-loader"></span>
