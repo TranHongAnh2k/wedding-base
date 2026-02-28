@@ -4222,6 +4222,8 @@
   }
   .gallery-section-1 .section-background {
     background: center center/ cover no-repeat content-box border-box var(--bg-image-section-main);
+    position: absolute;
+    z-index: 9999;
     --type: 0;
   }
   .gallery-title {

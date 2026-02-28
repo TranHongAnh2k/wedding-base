@@ -33,7 +33,7 @@ const GallerySection = () => {
         data-section=''
       >
         <div className='section-wrapper full-width p-relative'>
-          <div className='section-background p-absolute full-width full-height'></div>
+          <div className='section-background p-absolute full-width full-height'  ></div>
           <div className='section-container p-relative'>
             <div className='com-text-block p-absolute animation gallery-title mb-4'>
               <div className='text-block'>
@@ -41,7 +41,7 @@ const GallerySection = () => {
               </div>
             </div>
 
-            <div className='pt-16' style={{paddingTop: 55}}>
+            <div className='pt-16' style={{paddingTop: 55, margin: '0 20px'}}>
               <Swiper
                 modules={[Autoplay]}
                 spaceBetween={16}
@@ -53,7 +53,7 @@ const GallerySection = () => {
                 loop={true}
                 breakpoints={{
            
-                  0: { slidesPerView: 1.25, centeredSlides: true },
+                  0: { slidesPerView: 1.15, centeredSlides: true },
                 }}
                 className='pb-8'
               >
