@@ -8,7 +8,7 @@ const HeroSection = ({ guestName = 'Anh Long123' }) => {
         <div className="section-wrapper full-width full-height p-relative">
           <div className="section-background p-absolute full-width full-height"></div>
           <div className="section-container full-height p-relative">
-            <div className="com-image-block p-absolute animation hero-decorative-image-1">
+            <div className="com-image-block p-absolute hero-decorative-image-1">
               <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
                 <div className="image-background p-absolute" role="img" aria-label=""></div>
                 <div className="image-gradient-border"></div>
