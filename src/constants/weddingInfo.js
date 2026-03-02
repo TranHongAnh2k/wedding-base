@@ -65,3 +65,11 @@ export const BRIDE_EVENT_INFO = Object.freeze({
   TIME_DISPLAY: 'Chủ Nhật - 08H00',
   // Có thể thêm các thông tin khác nếu cần
 })
+
+/** Favicon & logo: đường dẫn file trong public/ (dùng cho tab trình duyệt, bookmark, PWA...) */
+export const SITE_LOGO = Object.freeze({
+  FAVICON: '/favicon.ico',
+  APPLE_TOUCH_ICON: '/apple-touch-icon.png',
+  /** Ảnh dùng cho share mạng xã hội (og:image) — có thể trùng logo hoặc ảnh cưới */
+  OG_IMAGE: 'https://static-ai-lab.edupia.vn/test-image/image3.jpg',
+})
