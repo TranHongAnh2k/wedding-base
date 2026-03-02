@@ -1,0 +1,29 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (build lại trong Docker)
+build
+
+# Git
+.git
+.gitignore
+
+# IDE & OS
+.idea
+.vscode
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docs / dev (không cần trong image)
+docs
+*.md
+!README.md
+
+# Test & misc
+coverage
+.env.local
+.env.*.local
