@@ -41,8 +41,6 @@ export const EVENT_INFO = Object.freeze({
   HERO_DATE_DISPLAY: '29.03.2026',
   HERO_TIME_DISPLAY: 'Chủ Nhật - 08H00',
   INVITE_HEADER: 'Trân Trọng Kính Mời',
-  EVENT_DESCRIPTION: 'THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN',
-  EVENT_AT_LABEL: 'Vào Lúc',
   YEAR: 'Năm 2026',
   LUNAR_DATE: 'Tức Ngày 11 Tháng 02 Năm Bính Ngọ',
   WEEKDAY: 'Chủ nhật',
@@ -52,17 +50,33 @@ export const EVENT_INFO = Object.freeze({
 
 // Thông tin thời gian cho chú rể (Nhà Trai)
 export const GROOM_EVENT_INFO = Object.freeze({
+  EVENT_DESCRIPTION: 'THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN',
+  EVENT_AT_LABEL: 'Vào Lúc',
   TIME: '08 giờ 00',
   DATE_DISPLAY: '29.03.2026',
   TIME_DISPLAY: 'Chủ Nhật - 08H00',
+  WEEKDAY: 'Chủ nhật',
+  MONTH: 'Tháng 03',
+  DAY: '29',
+  LUNAR_DATE: 'Tức Ngày 11 Tháng 02 Năm Bính Ngọ',
+  HERO_TIME_DISPLAY: 'Chủ Nhật - 08H00',
+  HERO_DATE_DISPLAY: '29.03.2026',
   // Có thể thêm các thông tin khác nếu cần
 })
 
 // Thông tin thời gian cho cô dâu (Nhà Gái)
 export const BRIDE_EVENT_INFO = Object.freeze({
-  TIME: '08 giờ 00',
-  DATE_DISPLAY: '29.03.2026',
-  TIME_DISPLAY: 'Chủ Nhật - 08H00',
+  EVENT_DESCRIPTION: 'THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN',
+  EVENT_AT_LABEL: 'Vào Lúc',
+  TIME: '17 giờ 00',
+  DATE_DISPLAY: '28.03.2026',
+  TIME_DISPLAY: 'Thứ 7 - 17H00',
+  WEEKDAY: 'Thứ 7',
+  MONTH: 'Tháng 03',
+  DAY: '28',
+  LUNAR_DATE: 'Tức Ngày 10 Tháng 02 Năm Bính Ngọ',
+  HERO_TIME_DISPLAY: 'Thứ 7 - 17H00',
+  HERO_DATE_DISPLAY: '28.03.2026',  
   // Có thể thêm các thông tin khác nếu cần
 })
 

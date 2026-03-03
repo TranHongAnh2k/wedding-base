@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { animated } from '@react-spring/web'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Autoplay } from 'swiper/modules'
+import { Pagination, Autoplay, Navigation } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import { useScrollReveal } from '../utils/useScrollReveal'
@@ -61,7 +61,7 @@ const GallerySection = () => {
                   <SwiperSlide key={image.className}>
                     <div
                       className='gallery-grid-item overflow-hidden rounded-2xl shadow-lg '
-                      // onClick={() => setFullscreenIndex(index)}
+                      onClick={() => setFullscreenIndex(index)}
                     >
                       <GalleryImage
                         imageUrl={image.imageUrl}
@@ -77,6 +77,61 @@ const GallerySection = () => {
           </div>
         </div>
       </animated.div>
+      {fullscreenIndex !== null && allImages[fullscreenIndex] && (
+        <div
+          className='image-modal-backdrop'
+          onClick={() => setFullscreenIndex(null)}
+        >
+          <div
+            className='image-modal-content'
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type='button'
+              className='image-modal-close'
+              onClick={() => setFullscreenIndex(null)}
+            >
+              ×
+            </button>
+            <Swiper
+              modules={[Pagination, Navigation]}
+              spaceBetween={16}
+              pagination={{ clickable: true }}
+              navigation={{
+                nextEl: '.image-modal-next',
+                prevEl: '.image-modal-prev',
+              }}
+              loop={true}
+              initialSlide={fullscreenIndex}
+              className='image-modal-swiper'
+            >
+              {allImages.map((image, index) => (
+                <SwiperSlide key={image.className || index}>
+                  <img
+                    src={image.imageUrl}
+                    alt='Ảnh album hình cưới phóng to'
+                    className='image-modal-img'
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <button
+              type='button'
+              className='image-modal-nav image-modal-prev'
+              aria-label='Ảnh trước'
+            >
+              ‹
+            </button>
+            <button
+              type='button'
+              className='image-modal-nav image-modal-next'
+              aria-label='Ảnh tiếp theo'
+            >
+              ›
+            </button>
+          </div>
+        </div>
+      )}
     </>
   )
 }

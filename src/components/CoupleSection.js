@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
 import { COUPLE_INFO } from '../constants/weddingInfo';
+
+const COUPLE_IMAGE_URL = 'https://static-ai-lab.edupia.vn/test-image/image10.jpg';
 
 const CoupleSection = () => {
   const { ref, style } = useScrollReveal({ 
@@ -10,6 +12,8 @@ const CoupleSection = () => {
     from: { opacity: 0, y: 30 },
     to: { opacity: 1, y: 0 }
   });
+
+  const [isCoupleImageOpen, setIsCoupleImageOpen] = useState(false);
 
   return (
     <animated.div ref={ref} style={style} className="com-section couple-section" data-section="">
@@ -55,8 +59,15 @@ const CoupleSection = () => {
             </div>
           </div>
           <div className="com-image-block p-absolute animation couple-main-image">
-            <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
-              <div className="image-background p-absolute" role="img" aria-label=""></div>
+            <div className="image-block-css p-relative full-width full-height full-mask-size mask-position" style={{position: 'relative'}}>
+              {/* <div className="image-background p-absolute" role="img" aria-label=""></div> */}
+               <img
+                 src={COUPLE_IMAGE_URL}
+                 alt="Ảnh thiệp cưới"
+                 className="hero-main-image-clickable"
+                 style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', cursor: 'pointer'}}
+                 onClick={() => setIsCoupleImageOpen(true)}
+               />
               <div className="image-gradient-border"></div>
             </div>
           </div>
@@ -104,6 +115,20 @@ const CoupleSection = () => {
               </p>
             </div>
           </div>
+          {isCoupleImageOpen && (
+            <div className="image-modal-backdrop" onClick={() => setIsCoupleImageOpen(false)}>
+              <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+                <button
+                  type="button"
+                  className="image-modal-close"
+                  onClick={() => setIsCoupleImageOpen(false)}
+                >
+                  ×
+                </button>
+                <img src={COUPLE_IMAGE_URL} alt="Ảnh cô dâu chú rể phóng to" className="image-modal-img" />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </animated.div>
