@@ -95,15 +95,15 @@ sudo systemctl enable nginx
 **Bước 3 — Dùng config reverse proxy**
 
 ```bash
-# Copy config proxy (host listen 80, proxy xuống container 8080)
+# Đứng ở thư mục wedding-base (cd ~/wedding-base hoặc đường dẫn bạn clone)
 sudo cp deploy/nginx/thiepcuoi-honganh-ngocanh.online.proxy.conf /etc/nginx/conf.d/thiepcuoi-honganh-ngocanh.online.conf
-# Hoặc sites-available: sudo cp ... /etc/nginx/sites-available/ && sudo ln -sf /etc/nginx/sites-available/thiepcuoi-honganh-ngocanh.online.proxy.conf /etc/nginx/sites-enabled/
+# Hoặc sites-available: sudo cp deploy/nginx/thiepcuoi-honganh-ngocanh.online.proxy.conf /etc/nginx/sites-available/ && sudo ln -sf /etc/nginx/sites-available/thiepcuoi-honganh-ngocanh.online.proxy.conf /etc/nginx/sites-enabled/
 
 # Tạo thư mục cho ACME challenge (certbot)
 sudo mkdir -p /var/www/letsencrypt
 
-# Bỏ config mặc định nếu conflict (ví dụ default server)
-# sudo rm /etc/nginx/conf.d/default.conf   # nếu cần
+# Chỉ cần bỏ config mặc định nếu có (Ubuntu/Debian thường có default.conf; Amazon Linux thường không)
+# [ -f /etc/nginx/conf.d/default.conf ] && sudo mv /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak
 
 sudo nginx -t && sudo systemctl start nginx
 # Hoặc: sudo systemctl reload nginx
