@@ -72,12 +72,12 @@ const CoupleSection = () => {
           </div>
           <div className="com-text-block p-absolute animation couple-groom-location">
             <div className="text-block">
-              <p className="text-block-css full-width">{COUPLE_INFO.GROOM_LOCATION}</p>
+              <p className="text-block-css full-width">{COUPLE_INFO.BRIDE_LOCATION}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-location">
             <div className="text-block">
-              <p className="text-block-css full-width">{COUPLE_INFO.BRIDE_LOCATION}</p>
+              <p className="text-block-css full-width">{COUPLE_INFO.GROOM_LOCATION}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-parents">

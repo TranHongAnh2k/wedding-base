@@ -5,7 +5,7 @@ export const COUPLE_INFO = Object.freeze({
   DISPLAY_NAME: 'Hồng Anh & Ngọc Ánh',
   GROOM_PARENTS: ['ÔNG PHẠM VĂN HUYÊN', 'BÀ TRẦN THỊ VÂN'],
   BRIDE_PARENTS: ['ÔNG PHAN CHINH THẮNG', 'BÀ LÊ THỊ HỒNG'],
-  GROOM_LOCATION: 'Nam Sách, Hải Phòng',
+  GROOM_LOCATION: 'Trần Phú, Hải Phòng',
   BRIDE_LOCATION: 'Khoái Châu, Hưng Yên',
   HOUSE_GROOM_LABEL: 'NHÀ TRAI',
   HOUSE_BRIDE_LABEL: 'NHÀ GÁI',
@@ -13,7 +13,7 @@ export const COUPLE_INFO = Object.freeze({
 
 export const LOCATION_INFO = Object.freeze({
   HEADER: 'LỄ THÀNH HÔN ĐƯỢC TỔ CHỨC TẠI',
-  ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú,', 'Nam Sách, Hải Phòng'],
+  ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú, Hải Phòng'],
   VENUE_NAME: 'Nhà riêng của chú rể',
   MAP_URL: 'https://maps.app.goo.gl/ewjZniHh63sGhh757',
   MAP_CTA: 'Xem Chỉ Đường',
@@ -22,18 +22,18 @@ export const LOCATION_INFO = Object.freeze({
 // Thông tin địa chỉ cho chú rể (Nhà Trai)
 export const GROOM_LOCATION_INFO = Object.freeze({
   HEADER: 'BUỔI TIỆC ĐƯỢC TỔ CHỨC TẠI',
-  ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú,', 'Nam Sách, Hải Phòng'],
+  ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú,', 'Hải Phòng'],
   VENUE_NAME: 'Nhà riêng của chú rể',
-  MAP_URL: 'https://maps.app.goo.gl/ewjZniHh63sGhh757',
+  MAP_URL: 'https://maps.app.goo.gl/QzbshP4xqfLHwFYN8',
   MAP_CTA: 'Xem Chỉ Đường',
 })
 
 // Thông tin địa chỉ cho cô dâu (Nhà Gái)
 export const BRIDE_LOCATION_INFO = Object.freeze({
   HEADER: 'BUỔI TIỆC ĐƯỢC TỔ CHỨC TẠI',
-  ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú,', 'Nam Sách, Hải Phòng'],
+  ADDRESS_LINES: ['Liên khê, Khoái Châu', 'Hưng Yên'],
   VENUE_NAME: 'Nhà riêng của cô dâu',
-  MAP_URL: 'https://maps.app.goo.gl/BRIDE_MAP_URL',
+  MAP_URL: 'https://maps.app.goo.gl/A5sFB5ZZZsdxawRC6',
   MAP_CTA: 'Xem Chỉ Đường',
 })
 
