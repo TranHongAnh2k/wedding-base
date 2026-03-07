@@ -199,6 +199,10 @@
   justify-content: center;
   z-index: 10000;
   padding: 16px;
+  /* Trên mobile: tránh pull-to-refresh / scroll nền gây reload trang */
+  touch-action: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .image-modal-content {
@@ -210,6 +214,8 @@
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   background: #000;
+  /* Cho phép vuốt Swiper bên trong, không chặn touch */
+  touch-action: pan-y pan-x;
 }
 
 .image-modal-img {

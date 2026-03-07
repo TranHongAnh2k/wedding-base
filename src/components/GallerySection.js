@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { animated } from '@react-spring/web'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Autoplay, Navigation } from 'swiper/modules'
@@ -6,11 +6,31 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { useScrollReveal } from '../utils/useScrollReveal'
 import GalleryImage from './GalleryImage'
-import { gallery1Images, gallery2Images } from '../config/galleryConfig'
 const cdn = 'https://static-ai-lab.edupia.vn/test-image/slide/image_'
+const totalSlides = 33
+const allImages = Array.from({ length: totalSlides }, (_, i) => ({
+  imageUrl: `${cdn}${i + 1}.jpg`,
+}))
 const GallerySection = () => {
   const [fullscreenIndex, setFullscreenIndex] = useState(null)
-  const allImages = [...gallery1Images, ...gallery2Images]
+
+  // Trên mobile: khóa scroll body khi mở modal để tránh pull-to-refresh gây reload trang
+  useEffect(() => {
+    if (fullscreenIndex === null) return
+    const prev = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    return () => {
+      document.body.style.overflow = prev
+    }
+  }, [fullscreenIndex])
+
+  const closeModal = (e) => {
+    if (e) {
+      e.preventDefault()
+      e.stopPropagation()
+    }
+    setFullscreenIndex(null)
+  }
   const { ref: galleryRef, style: galleryStyle } = useScrollReveal({
     threshold: 0.1,
     rootMargin: '0px',
@@ -57,15 +77,14 @@ const GallerySection = () => {
                 }}
                 className='pb-8'
               >
-                {new Array(33).fill(null).map((_, index) => (
-                  <SwiperSlide key={index}>
+                {allImages.map((img, index) => (
+                  <SwiperSlide key={`slide_${index}`}>
                     <div
                       className='gallery-grid-item overflow-hidden rounded-2xl shadow-lg '
                       onClick={() => setFullscreenIndex(index)}
                     >
                       <GalleryImage
-                        imageUrl={`${cdn}${index + 1}.jpg`}
-                   
+                        imageUrl={img.imageUrl}
                         triggerOnce={false}
                       />
                     </div>
@@ -79,7 +98,8 @@ const GallerySection = () => {
       {fullscreenIndex !== null && allImages[fullscreenIndex] && (
         <div
           className='image-modal-backdrop'
-          onClick={() => setFullscreenIndex(null)}
+          onClick={closeModal}
+          role='presentation'
         >
           <div
             className='image-modal-content'
@@ -88,7 +108,8 @@ const GallerySection = () => {
             <button
               type='button'
               className='image-modal-close'
-              onClick={() => setFullscreenIndex(null)}
+              onClick={closeModal}
+              aria-label='Đóng'
             >
               ×
             </button>
@@ -104,10 +125,10 @@ const GallerySection = () => {
               initialSlide={fullscreenIndex}
               className='image-modal-swiper'
             >
-              {new Array(33).fill(null).map((_, index) => (
-                <SwiperSlide key={index}>
+              {allImages.map((img, index) => (
+                <SwiperSlide key={`modal_${index}`}>
                   <img
-                    src={`${cdn}${index + 1}.jpg`}
+                    src={img.imageUrl}
                     alt='Ảnh album hình cưới phóng to'
                     className='image-modal-img'
                   />
