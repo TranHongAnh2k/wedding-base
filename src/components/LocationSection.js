@@ -29,7 +29,7 @@ const LocationSection = ({ side = 'groom' }) => {
               <div className="image-gradient-border"></div>
             </div>
           </div>
-          <div className="com-image-block p-absolute animation location-pin-icon">
+          <div className={`com-image-block p-absolute animation location-pin-icon location-pin-icon_${side}`}>
             <div className="image-block-css p-relative full-width full-height full-mask-size mask-position">
               <div className="image-background p-absolute" role="img" aria-label=""></div>
               <div className="image-gradient-border"></div>

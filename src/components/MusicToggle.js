@@ -63,7 +63,7 @@ const MusicToggle = () => {
       <audio
         ref={audioRef}
         className="background-music"
-        src="https://statics.pancake.vn/web-media/5e/ee/bf/4a/afa10d3bdf98ca17ec3191ebbfd3c829d135d06939ee1f1b712d731d-w:0-h:0-l:2938934-t:audio/mpeg.mp3"
+        src="https://static-ai-lab.edupia.vn/test-image/music.mp3"
         preload="none"
         loop
       />

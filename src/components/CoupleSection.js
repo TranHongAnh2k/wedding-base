@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { animated } from '@react-spring/web';
 import { useScrollReveal } from '../utils/useScrollReveal';
-import { COUPLE_INFO } from '../constants/weddingInfo';
+import { BRIDE_EVENT_INFO, COUPLE_INFO, GROOM_EVENT_INFO } from '../constants/weddingInfo';
 
 const COUPLE_IMAGE_URL = 'https://static-ai-lab.edupia.vn/test-image/image10.jpg';
 
-const CoupleSection = () => {
+const CoupleSection = ({  side = 'groom' }) => {
+    const eventTimeInfo = side === 'bride' ? BRIDE_EVENT_INFO : GROOM_EVENT_INFO
   const { ref, style } = useScrollReveal({ 
     threshold: 0.1, 
     rootMargin: '0px',
@@ -22,20 +23,20 @@ const CoupleSection = () => {
         <div className="section-container full-height p-relative">
           <div className="com-text-block p-absolute animation couple-header-text">
             <div className="text-block">
-              <h2 className="text-block-css full-width">{COUPLE_INFO.HEADER}<br /></h2>
+              <h2 className="text-block-css full-width">{eventTimeInfo.HEADER}<br /></h2>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-name">
             <div className="full-width full-height">
               <div className="text-block">
-                <h1 className="text-block-css full-width">{COUPLE_INFO.GROOM_NAME}</h1>
+                <h1 className="text-block-css full-width">{eventTimeInfo.NAME_DISPLAY_1}</h1>
               </div>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-name">
             <div className="full-width full-height">
               <div className="text-block">
-                <h1 className="text-block-css full-width">{COUPLE_INFO.BRIDE_NAME}</h1>
+                <h1 className="text-block-css full-width">{eventTimeInfo.NAME_DISPLAY_2}</h1>
               </div>
             </div>
           </div>
@@ -73,28 +74,28 @@ const CoupleSection = () => {
           </div>
           <div className="com-text-block p-absolute animation couple-groom-side-label">
             <div className="text-block">
-              <p className="text-block-css full-width">&nbsp;{COUPLE_INFO.HOUSE_GROOM_LABEL}<br /><br /></p>
+              <p className="text-block-css full-width">&nbsp;{eventTimeInfo.HOUSE_LABEL_1}<br /><br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-side-label">
             <div className="text-block">
-              <p className="text-block-css full-width">&nbsp;{COUPLE_INFO.HOUSE_BRIDE_LABEL}<br /><br /></p>
+              <p className="text-block-css full-width">&nbsp;{eventTimeInfo.HOUSE_LABEL_2}<br /><br /></p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-location">
             <div className="text-block">
-              <p className="text-block-css full-width">{COUPLE_INFO.BRIDE_LOCATION}</p>
+              <p className="text-block-css full-width">{eventTimeInfo.LOCATION_1}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-bride-location">
             <div className="text-block">
-              <p className="text-block-css full-width">{COUPLE_INFO.GROOM_LOCATION}</p>
+              <p className="text-block-css full-width">{eventTimeInfo.LOCATION_2}</p>
             </div>
           </div>
           <div className="com-text-block p-absolute animation couple-groom-parents">
             <div className="text-block">
               <p className="text-block-css full-width">
-                {COUPLE_INFO.GROOM_PARENTS.map((line) => (
+                {eventTimeInfo.PARENTS_1.map((line) => (
                   <React.Fragment key={line}>
                     {line}
                     <br />
@@ -106,7 +107,7 @@ const CoupleSection = () => {
           <div className="com-text-block p-absolute animation couple-bride-parents">
             <div className="text-block">
               <p className="text-block-css full-width">
-                {COUPLE_INFO.BRIDE_PARENTS.map((line) => (
+                {eventTimeInfo.PARENTS_2.map((line) => (
                   <React.Fragment key={line}>
                     {line}
                     <br />

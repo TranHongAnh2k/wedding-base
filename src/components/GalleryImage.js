@@ -5,12 +5,8 @@ import { useGalleryImageAnimation } from '../utils/useGalleryImageAnimation'
 /**
  * Component cho một gallery image với animation
  */
-const GalleryImage = ({ imageUrl, animationType, delay, triggerOnce = false }) => {
-  const { ref, style } = useGalleryImageAnimation({
-    animationType,
-    delay,
-    triggerOnce,
-  })
+const GalleryImage = ({ imageUrl}) => {
+ 
 
   return (
  

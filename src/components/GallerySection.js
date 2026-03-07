@@ -7,7 +7,7 @@ import 'swiper/css/pagination'
 import { useScrollReveal } from '../utils/useScrollReveal'
 import GalleryImage from './GalleryImage'
 import { gallery1Images, gallery2Images } from '../config/galleryConfig'
-
+const cdn = 'https://static-ai-lab.edupia.vn/test-image/slide/image_'
 const GallerySection = () => {
   const [fullscreenIndex, setFullscreenIndex] = useState(null)
   const allImages = [...gallery1Images, ...gallery2Images]
@@ -57,16 +57,15 @@ const GallerySection = () => {
                 }}
                 className='pb-8'
               >
-                {allImages.map((image, index) => (
-                  <SwiperSlide key={image.className}>
+                {new Array(33).fill(null).map((_, index) => (
+                  <SwiperSlide key={index}>
                     <div
                       className='gallery-grid-item overflow-hidden rounded-2xl shadow-lg '
                       onClick={() => setFullscreenIndex(index)}
                     >
                       <GalleryImage
-                        imageUrl={image.imageUrl}
-                        animationType={image.animationType}
-                        delay={image.delay}
+                        imageUrl={`${cdn}${index + 1}.jpg`}
+                   
                         triggerOnce={false}
                       />
                     </div>
@@ -105,10 +104,10 @@ const GallerySection = () => {
               initialSlide={fullscreenIndex}
               className='image-modal-swiper'
             >
-              {allImages.map((image, index) => (
-                <SwiperSlide key={image.className || index}>
+              {new Array(33).fill(null).map((_, index) => (
+                <SwiperSlide key={index}>
                   <img
-                    src={image.imageUrl}
+                    src={`${cdn}${index + 1}.jpg`}
                     alt='Ảnh album hình cưới phóng to'
                     className='image-modal-img'
                   />

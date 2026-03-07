@@ -23,7 +23,7 @@ export const LOCATION_INFO = Object.freeze({
 export const GROOM_LOCATION_INFO = Object.freeze({
   HEADER: 'BUỔI TIỆC ĐƯỢC TỔ CHỨC TẠI',
   ADDRESS_LINES: ['Đội 7, An Xá, Trần Phú,', 'Hải Phòng'],
-  VENUE_NAME: 'Nhà riêng của chú rể',
+  VENUE_NAME: 'Tư gia nhà trai',
   MAP_URL: 'https://maps.app.goo.gl/QzbshP4xqfLHwFYN8',
   MAP_CTA: 'Xem Chỉ Đường',
 })
@@ -32,8 +32,8 @@ export const GROOM_LOCATION_INFO = Object.freeze({
 export const BRIDE_LOCATION_INFO = Object.freeze({
   HEADER: 'BUỔI TIỆC ĐƯỢC TỔ CHỨC TẠI',
   ADDRESS_LINES: ['Liên khê, Khoái Châu', 'Hưng Yên'],
-  VENUE_NAME: 'Nhà riêng của cô dâu',
-  MAP_URL: 'https://maps.app.goo.gl/A5sFB5ZZZsdxawRC6',
+  VENUE_NAME: 'Tư gia nhà gái',
+  MAP_URL: 'https://maps.app.goo.gl/HnhA86gzR3qCXN7q6',
   MAP_CTA: 'Xem Chỉ Đường',
 })
 
@@ -50,7 +50,7 @@ export const EVENT_INFO = Object.freeze({
 
 // Thông tin thời gian cho chú rể (Nhà Trai)
 export const GROOM_EVENT_INFO = Object.freeze({
-  EVENT_DESCRIPTION: 'THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN',
+  EVENT_DESCRIPTION: 'THAM DỰ TIỆC CHUNG VUI CÙNG GIA ĐÌNH',
   EVENT_AT_LABEL: 'Vào Lúc',
   TIME: '08 giờ 00',
   DATE_DISPLAY: '29.03.2026',
@@ -61,12 +61,22 @@ export const GROOM_EVENT_INFO = Object.freeze({
   LUNAR_DATE: 'Tức Ngày 11 Tháng 02 Năm Bính Ngọ',
   HERO_TIME_DISPLAY: 'Chủ Nhật - 08H00',
   HERO_DATE_DISPLAY: '29.03.2026',
+  NAME_DISPLAY_1: 'Trần Hồng Anh',
+  NAME_DISPLAY_2: 'Phan Thị Ngọc Ánh',
+  HOUSE_LABEL_1: 'NHÀ TRAI',
+  HOUSE_LABEL_2: 'NHÀ GÁI',
+  LOCATION_2: 'Trần Phú, Hải Phòng',
+  LOCATION_1: 'Khoái Châu, Hưng Yên',
+  PARENTS_1: ['ÔNG PHẠM VĂN HUYÊN', 'BÀ TRẦN THỊ VÂN'],
+  PARENTS_2: ['ÔNG PHAN CHINH THẮNG', 'BÀ LÊ THỊ HỒNG'],
+  DISPLAY_NAME: "Hồng Anh & Ngọc Ánh",
+    HEADER: 'Trân Trọng Báo Tin Lễ Thành Hôn Của',
   // Có thể thêm các thông tin khác nếu cần
 })
 
 // Thông tin thời gian cho cô dâu (Nhà Gái)
 export const BRIDE_EVENT_INFO = Object.freeze({
-  EVENT_DESCRIPTION: 'THAM DỰ TIỆC MỪNG LỄ THÀNH HÔN',
+  EVENT_DESCRIPTION: 'THAM DỰ TIỆC CHUNG VUI CÙNG GIA ĐÌNH',
   EVENT_AT_LABEL: 'Vào Lúc',
   TIME: '17 giờ 00',
   DATE_DISPLAY: '28.03.2026',
@@ -77,6 +87,16 @@ export const BRIDE_EVENT_INFO = Object.freeze({
   LUNAR_DATE: 'Tức Ngày 10 Tháng 02 Năm Bính Ngọ',
   HERO_TIME_DISPLAY: 'Thứ 7 - 17H00',
   HERO_DATE_DISPLAY: '28.03.2026',  
+  NAME_DISPLAY_1: 'Phan Thị Ngọc Ánh',
+  NAME_DISPLAY_2: 'Trần Hồng Anh',
+  HOUSE_LABEL_1: 'NHÀ GÁI',
+  HOUSE_LABEL_2: 'NHÀ TRAI',
+  LOCATION_2: 'Khoái Châu, Hưng Yên',
+  LOCATION_1: 'Trần Phú, Hải Phòng',
+  PARENTS_1: ['ÔNG PHAN CHINH THẮNG', 'BÀ LÊ THỊ HỒNG'],
+  PARENTS_2: ['ÔNG PHẠM VĂN HUYÊN', 'BÀ TRẦN THỊ VÂN'],
+  DISPLAY_NAME: "Ngọc Ánh & Hồng Anh",
+    HEADER: 'Trân Trọng Báo Tin Lễ Vu Quy Của',
   // Có thể thêm các thông tin khác nếu cần
 })
 
