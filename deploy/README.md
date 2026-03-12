@@ -165,6 +165,17 @@ Hoặc gom vào script `deploy/update.sh` (trong repo có thể thêm sau).
 
 ---
 
+## Tránh cache trình duyệt sau khi deploy
+
+Nginx trong Docker đã cấu hình **không cache file `index.html`** (header `Cache-Control: no-cache, no-store, must-revalidate`). Sau khi bạn deploy bản mới:
+
+1. Trình duyệt sẽ luôn tải lại `index.html` (không dùng bản cũ trong cache).
+2. `index.html` mới trỏ đến JS/CSS có tên kèm hash (ví dụ `main.abc123.js`), nên bản mới sẽ được tải.
+
+Nếu vẫn thấy giao diện cũ: thử **hard refresh** (Ctrl+Shift+R hoặc Cmd+Shift+R) hoặc mở tab ẩn danh. Một lần sau khi đã deploy image có cấu hình trên, lần sau deploy chỉ cần pull + chạy container mới là đủ.
+
+---
+
 ## Deploy không dùng Docker (Nginx thuần trên server)
 
 Nếu không dùng Docker, build rồi copy `build/` lên server và dùng Nginx như trong `deploy/nginx/thiepcuoi-honganh-ngocanh.online.conf`. Chi tiết bước copy, enable site, certbot giữ như hướng dẫn Nginx trước đây.
