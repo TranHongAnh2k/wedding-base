@@ -81,7 +81,7 @@ export const BRIDE_EVENT_INFO = Object.freeze({
   TIME: '17 giờ 00',
   DATE_DISPLAY: '29.03.2026',
   TIME_DISPLAY: 'Chủ nhật - 9H30',
-  WEEKDAY: 'Chủ nhật',
+  WEEKDAY: 'Thứ 7',
   MONTH: 'Tháng 03',
   DAY: '28',
   LUNAR_DATE: 'Tức Ngày 10 Tháng 02 Năm Bính Ngọ',
